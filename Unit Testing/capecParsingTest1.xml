@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<capec:Attack_Pattern_Catalog xmlns:capec="http://capec.mitre.org/capec-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                              Catalog_Name="CAPEC"
+                              Catalog_Version="2.8"
+                              Catalog_Date="2015-12-07"
+                              xsi:schemaLocation="http://capec.mitre.org/capec-2 http://capec.mitre.org/data/xsd/ap_schema_v2.7.1.xsd  http://cybox.mitre.org/cybox-2 http://cybox.mitre.org/XMLSchema/core/2.1/cybox_core.xsd">
+							  
+
+	<capec:Attack_Patterns>
+      <capec:Attack_Pattern ID="199" Name="Cross-Site Scripting Using Alternate Syntax"
+                            Pattern_Abstraction="Standard"
+                            Pattern_Completeness="Complete"
+                            Status="Draft">
+         <capec:Description>
+            <capec:Summary>
+               <capec:Text>The attacker uses alternate forms of keywords or commands that result in the same action as the primary form but which may not be caught by filters. For example, many keywords are processed in a case insensitive manner. If the site's web filtering algorithm does not convert all tags into a consistent case before the comparison with forbidden keywords it is possible to bypass filters (e.g., incomplete black lists) by using an alternate case structure. For example, the "script" tag using the alternate forms of "Script" or "ScRiPt" may bypass filters where "script" is the only form tested. Other variants using different syntax representations are also possible as well as using pollution meta-characters or entities that are eventually ignored by the rendering engine. The attack can result in the execution of otherwise prohibited functionality.</capec:Text>
+            </capec:Summary>
+            <capec:Attack_Execution_Flow>
+               <capec:Attack_Phases>
+                  <capec:Attack_Phase ID="1" Name="Explore">
+                     <capec:Attack_Steps>
+                        <capec:Attack_Step ID="1">
+                           <capec:Custom_Attack_Step>
+                              <capec:Attack_Step_Title>Survey the application</capec:Attack_Step_Title>
+                              <capec:Attack_Step_Description>
+                                 <capec:Text>Using a browser or an automated tool, an attacker follows all public links on a web site. He records all the links he finds.</capec:Text>
+                              </capec:Attack_Step_Description>
+                              <capec:Attack_Step_Techniques>
+                                 <capec:Attack_Step_Technique ID="1">
+                                    <capec:Attack_Step_Technique_Description>
+                                       <capec:Text>Use a spidering tool to follow and record all links. Make special note of any links that include parameters in the URL.</capec:Text>
+                                    </capec:Attack_Step_Technique_Description>
+                                    <capec:Environments>env-Web</capec:Environments>
+                                 </capec:Attack_Step_Technique>
+                                 <capec:Attack_Step_Technique ID="2">
+                                    <capec:Attack_Step_Technique_Description>
+                                       <capec:Text>Use a proxy tool to record all links visited during a manual traversal of the web application. Make special note of any links that include parameters in the URL. Manual traversal of this type is frequently necessary to identify forms that are GET method forms rather than POST forms.</capec:Text>
+                                    </capec:Attack_Step_Technique_Description>
+                                    <capec:Environments>env-Web</capec:Environments>
+                                 </capec:Attack_Step_Technique>
+                                 <capec:Attack_Step_Technique ID="3">
+                                    <capec:Attack_Step_Technique_Description>
+                                       <capec:Text>Use a browser to manually explore the website and analyze how it is constructed. Many browser's plugins are available to facilitate the analysis or automate the URL discovery.</capec:Text>
+                                    </capec:Attack_Step_Technique_Description>
+                                    <capec:Environments>env-Web</capec:Environments>
+                                 </capec:Attack_Step_Technique>
+                              </capec:Attack_Step_Techniques>
+                              <capec:Indicators>
+                                 <capec:Indicator ID="1" type="Positive">
+                                    <capec:Indicator_Description>
+                                       <capec:Text>URL parameters are used by the application or the browser (DOM)</capec:Text>
+                                    </capec:Indicator_Description>
+                                    <capec:Environments>env-Web</capec:Environments>
+                                 </capec:Indicator>
+                                 <capec:Indicator ID="2" type="Inconclusive">
+                                    <capec:Indicator_Description>
+                                       <capec:Text>Using URL rewriting, parameters may be part of the URL path.</capec:Text>
+                                    </capec:Indicator_Description>
+                                    <capec:Environments>env-Web</capec:Environments>
+                                 </capec:Indicator>
+                                 <capec:Indicator ID="3" type="Inconclusive">
+                                    <capec:Indicator_Description>
+                                       <capec:Text>No parameters appear on the URL. Even though none appear, the web application may still use them if they are provided.</capec:Text>
+                                    </capec:Indicator_Description>
+                                    <capec:Environments>env-Web</capec:Environments>
+                                 </capec:Indicator>
+                                 <capec:Indicator ID="4" type="Negative">
+                                    <capec:Indicator_Description>
+                                       <capec:Text>Applications that have only static pages or that simply present information without accepting input are unlikely to be susceptible.</capec:Text>
+                                    </capec:Indicator_Description>
+                                    <capec:Environments>env-Web</capec:Environments>
+                                 </capec:Indicator>
+                              </capec:Indicators>
+                              <capec:Outcomes>
+                                 <capec:Outcome ID="1" type="Success">
+                                    <capec:Outcome_Description>A list of URLs, with their corresponding parameters is created by the attacker.</capec:Outcome_Description>
+                                 </capec:Outcome>
+                                 <capec:Outcome ID="2" type="Success">
+                                    <capec:Outcome_Description>A list of application user interface entry fields is created by the attacker.</capec:Outcome_Description>
+                                 </capec:Outcome>
+                                 <capec:Outcome ID="3" type="Success">
+                                    <capec:Outcome_Description>A list of resources accessed by the application is created by the attacker.</capec:Outcome_Description>
+                                 </capec:Outcome>
+                              </capec:Outcomes>
+                              <capec:Security_Controls>
+                                 <capec:Security_Control ID="1" type="Detective">
+                                    <capec:Security_Control_Description>Monitor velocity of page fetching in web logs. Humans who view a page and select a link from it will click far slower and far less regularly than tools. Tools make requests very quickly and the requests are typically spaced apart regularly (e.g. 0.8 seconds between them).</capec:Security_Control_Description>
+                                 </capec:Security_Control>
+                                 <capec:Security_Control ID="2" type="Detective">
+                                    <capec:Security_Control_Description>Create links on some pages that are visually hidden from web browsers. Using iframes, images, or other HTML techniques, the links can be hidden from web browsing humans, but visible to spiders and programs. A request for the page, then, becomes a good predictor of an automated tool probing the application.</capec:Security_Control_Description>
+                                 </capec:Security_Control>
+                                 <capec:Security_Control ID="3" type="Preventative">
+                                    <capec:Security_Control_Description>Use CAPTCHA to prevent the use of the application by an automated tool.</capec:Security_Control_Description>
+                                 </capec:Security_Control>
+                                 <capec:Security_Control ID="4" type="Preventative">
+                                    <capec:Security_Control_Description>Actively monitor the application and either deny or redirect requests from origins that appear to be automated.</capec:Security_Control_Description>
+                                 </capec:Security_Control>
+                              </capec:Security_Controls>
+                           </capec:Custom_Attack_Step>
+                        </capec:Attack_Step>
+                     </capec:Attack_Steps>
+                  </capec:Attack_Phase>
+                  <capec:Attack_Phase ID="2" Name="Experiment">
+                     <capec:Attack_Steps>
+                        <capec:Attack_Step ID="1">
+                           <capec:Custom_Attack_Step>
+                              <capec:Attack_Step_Title>Attempt injection payload variations on input parameters</capec:Attack_Step_Title>
+                              <capec:Attack_Step_Description>
+                                 <capec:Text>Possibly using an automated tool, an attacker requests variations on the inputs he surveyed before. He sends parameters that include variations of payloads. The payloads are designed to bypass incomplete filtering (e.g., incomplete HTML encoding etc.) and tries many variations of characters injection that would enable the XSS payload. He records all the responses from the server that include unmodified versions of his script.</capec:Text>
+                              </capec:Attack_Step_Description>
+                              <capec:Attack_Step_Techniques>
+                                 <capec:Attack_Step_Technique ID="1">
+                                    <capec:Attack_Step_Technique_Description>
+                                       <capec:Text>Use a list of XSS probe strings to inject in parameters of known URLs. If possible, the probe strings contain a unique identifier. Attempt numerous variations based on form, format, syntax &amp; encoding.</capec:Text>
+                                    </capec:Attack_Step_Technique_Description>
+                                    <capec:Environments>env-Web</capec:Environments>
+                                 </capec:Attack_Step_Technique>
+                                 <capec:Attack_Step_Technique ID="2">
+                                    <capec:Attack_Step_Technique_Description>
+                                       <capec:Text>Use a proxy tool to record results of manual input of XSS probes in known URLs.</capec:Text>
+                                    </capec:Attack_Step_Technique_Description>
+                                    <capec:Environments>env-Web</capec:Environments>
+                                 </capec:Attack_Step_Technique>
+                              </capec:Attack_Step_Techniques>
+                              <capec:Indicators>
+                                 <capec:Indicator ID="1" type="Positive">
+                                    <capec:Indicator_Description>
+                                       <capec:Text>The output of pages includes some form of a URL parameter. E.g., ?error="File not Found" becomes "File not Found" in the title of the web page</capec:Text>
+                                    </capec:Indicator_Description>
+                                    <capec:Environments>env-Web</capec:Environments>
+                                 </capec:Indicator>
+                                 <capec:Indicator ID="2" type="Positive">
+                                    <capec:Indicator_Description>
+                                       <capec:Text>User-controllable input is output back to the browser</capec:Text>
+                                    </capec:Indicator_Description>
+                                    <capec:Environments>env-Web</capec:Environments>
+                                 </capec:Indicator>
+                                 <capec:Indicator ID="3" type="Inconclusive">
+                                    <capec:Indicator_Description>
+                                       <capec:Text>Nothing is returned to the web page. The payload may be a stored to be served later. The unique identifier from the probe helps to trace the flow of the possible XSS.</capec:Text>
+                                    </capec:Indicator_Description>
+                                    <capec:Environments>env-Web</capec:Environments>
+                                 </capec:Indicator>
+                              </capec:Indicators>
+                              <capec:Outcomes>
+                                 <capec:Outcome ID="1" type="Success">
+                                    <capec:Outcome_Description>The attacker's script string is being reflected verbatim at some point in the web site (if not on the same page). Note that sometimes, the payload might be well encoded in the page, but wouldn't be encoded at all in some other section of the same web page (title, etc.)</capec:Outcome_Description>
+                                 </capec:Outcome>
+                                 <capec:Outcome ID="2" type="Failure">
+                                    <capec:Outcome_Description>All context-sensitive characters are consistently re-encoded before being sent to the web browser. For example, in a HTML tag element, the payload may not be able to evade the quotes in order to inject another attribute.</capec:Outcome_Description>
+                                 </capec:Outcome>
+                                 <capec:Outcome ID="3" type="Inconclusive">
+                                    <capec:Outcome_Description>Some sensitive characters are consistently encoded, but others are not</capec:Outcome_Description>
+                                 </capec:Outcome>
+                              </capec:Outcomes>
+                              <capec:Security_Controls>
+                                 <capec:Security_Control ID="1" type="Detective">
+                                    <capec:Security_Control_Description>Monitor input to web servers, application servers, and other HTTP infrastructure (e.g., load balancers). Alert on standard XSS probes. The majority of attackers use well-known strings to check for vulnerabilities. Use the same vulnerability catalogs that adversaries use.</capec:Security_Control_Description>
+                                 </capec:Security_Control>
+                                 <capec:Security_Control ID="2" type="Preventative">
+                                    <capec:Security_Control_Description>Apply appropriate input validation to filter all user-controllable input of scripting syntax</capec:Security_Control_Description>
+                                 </capec:Security_Control>
+                                 <capec:Security_Control ID="3" type="Preventative">
+                                    <capec:Security_Control_Description>Do not embed user-controllable input generated HTTP headers</capec:Security_Control_Description>
+                                 </capec:Security_Control>
+                                 <capec:Security_Control ID="4" type="Preventative">
+                                    <capec:Security_Control_Description>Actively monitor the application and either deny or redirect requests from origins that appear to be generating XSS probes.</capec:Security_Control_Description>
+                                 </capec:Security_Control>
+                              </capec:Security_Controls>
+                           </capec:Custom_Attack_Step>
+                        </capec:Attack_Step>
+                     </capec:Attack_Steps>
+                  </capec:Attack_Phase>
+                  <capec:Attack_Phase ID="3" Name="Exploit">
+                     <capec:Attack_Steps>
+                        <capec:Attack_Step ID="1">
+                           <capec:Custom_Attack_Step>
+                              <capec:Attack_Step_Title>Steal session IDs, credentials, page content, etc.</capec:Attack_Step_Title>
+                              <capec:Attack_Step_Description>
+                                 <capec:Text>As the attacker succeeds in exploiting the vulnerability, he can choose to steal user's credentials in order to reuse or to analyze them later on.</capec:Text>
+                              </capec:Attack_Step_Description>
+                              <capec:Attack_Step_Techniques>
+                                 <capec:Attack_Step_Technique ID="1">
+                                    <capec:Attack_Step_Technique_Description>
+                                       <capec:Text>Develop malicious JavaScript that is injected through vectors identified during the Experiment Phase and loaded by the victim's browser and sends document information to the attacker.</capec:Text>
+                                    </capec:Attack_Step_Technique_Description>
+                                    <capec:Environments>env-Web</capec:Environments>
+                                 </capec:Attack_Step_Technique>
+                                 <capec:Attack_Step_Technique ID="2">
+                                    <capec:Attack_Step_Technique_Description>
+                                       <capec:Text>Develop malicious JavaScript that injected through vectors identified during the Experiment Phase and takes commands from an attacker's server and then causes the browser to execute appropriately.</capec:Text>
+                                    </capec:Attack_Step_Technique_Description>
+                                    <capec:Environments>env-Web</capec:Environments>
+                                 </capec:Attack_Step_Technique>
+                              </capec:Attack_Step_Techniques>
+                              <capec:Outcomes>
+                                 <capec:Outcome ID="1" type="Success">
+                                    <capec:Outcome_Description>The attacker gets the user's cookies or other session identifiers.</capec:Outcome_Description>
+                                 </capec:Outcome>
+                                 <capec:Outcome ID="2" type="Success">
+                                    <capec:Outcome_Description>The attacker gets the content of the page the user is viewing.</capec:Outcome_Description>
+                                 </capec:Outcome>
+                                 <capec:Outcome ID="3" type="Success">
+                                    <capec:Outcome_Description>The attacker causes the user's browser to visit a page with malicious content.</capec:Outcome_Description>
+                                 </capec:Outcome>
+                              </capec:Outcomes>
+                              <capec:Security_Controls>
+                                 <capec:Security_Control ID="1" type="Detective">
+                                    <capec:Security_Control_Description>Monitor server logs for scripting parameters.</capec:Security_Control_Description>
+                                 </capec:Security_Control>
+                                 <capec:Security_Control ID="2" type="Detective">
+                                    <capec:Security_Control_Description>Monitor server logs for referrers. If users are being tricked into clicking XSS links through forums or other web postings, their web browsers will be providing Referrer headers most of the time. These can help indicate that the actual request is illegitimate.</capec:Security_Control_Description>
+                                 </capec:Security_Control>
+                                 <capec:Security_Control ID="3" type="Preventative">
+                                    <capec:Security_Control_Description>Apply appropriate input validation to filter all user-controllable input of scripting syntax</capec:Security_Control_Description>
+                                 </capec:Security_Control>
+                                 <capec:Security_Control ID="4" type="Preventative">
+                                    <capec:Security_Control_Description>Appropriately encode all browser output to avoid scripting syntax</capec:Security_Control_Description>
+                                 </capec:Security_Control>
+                                 <capec:Security_Control ID="5" type="Preventative">
+                                    <capec:Security_Control_Description>Actively monitor the application and either deny or redirect requests from origins that appear to be generating XSS probes.</capec:Security_Control_Description>
+                                 </capec:Security_Control>
+                              </capec:Security_Controls>
+                           </capec:Custom_Attack_Step>
+                        </capec:Attack_Step>
+                        <capec:Attack_Step ID="2">
+                           <capec:Custom_Attack_Step>
+                              <capec:Attack_Step_Title>Forceful browsing</capec:Attack_Step_Title>
+                              <capec:Attack_Step_Description>
+                                 <capec:Text>When the attacker targets the current application or another one (through CSRF vulnerabilities), the user will then be the one who perform the attacks without being aware of it. These attacks are mostly targeting application logic flaws, but it can also be used to create a widespread attack against a particular website on the user's current network (Internet or not).</capec:Text>
+                              </capec:Attack_Step_Description>
+                              <capec:Attack_Step_Techniques>
+                                 <capec:Attack_Step_Technique ID="1">
+                                    <capec:Attack_Step_Technique_Description>
+                                       <capec:Text>Develop malicious JavaScript that is injected through vectors identified during the Experiment Phase and loaded by the victim's browser and performs actions on the same web site</capec:Text>
+                                    </capec:Attack_Step_Technique_Description>
+                                    <capec:Environments>env-Web</capec:Environments>
+                                 </capec:Attack_Step_Technique>
+                                 <capec:Attack_Step_Technique ID="2">
+                                    <capec:Attack_Step_Technique_Description>
+                                       <capec:Text>Develop malicious JavaScript that injected through vectors identified during the Experiment Phase and takes commands from an attacker's server and then causes the browser to execute request to other web sites (especially the web applications that have CSRF vulnerabilities).</capec:Text>
+                                    </capec:Attack_Step_Technique_Description>
+                                    <capec:Environments>env-Web</capec:Environments>
+                                 </capec:Attack_Step_Technique>
+                              </capec:Attack_Step_Techniques>
+                              <capec:Outcomes>
+                                 <capec:Outcome ID="1" type="Success">
+                                    <capec:Outcome_Description>The attacker indirectly controls the user's browser and makes it performing actions exploiting CSRF.</capec:Outcome_Description>
+                                 </capec:Outcome>
+                                 <capec:Outcome ID="2" type="Success">
+                                    <capec:Outcome_Description>The attacker manipulates the browser through the steps that he designed in his attack. The user, identified on a website, is now performing actions he is not aware of.</capec:Outcome_Description>
+                                 </capec:Outcome>
+                              </capec:Outcomes>
+                              <capec:Security_Controls>
+                                 <capec:Security_Control ID="1" type="Detective">
+                                    <capec:Security_Control_Description>Monitor server logs for scripting parameters.</capec:Security_Control_Description>
+                                 </capec:Security_Control>
+                                 <capec:Security_Control ID="2" type="Detective">
+                                    <capec:Security_Control_Description>Monitor server logs for referrers. If users are being tricked into clicking XSS links through forums or other web postings, their web browsers will be providing Referrer headers most of the time. These can help indicate that the actual request is illegitimate.</capec:Security_Control_Description>
+                                 </capec:Security_Control>
+                                 <capec:Security_Control ID="3" type="Preventative">
+                                    <capec:Security_Control_Description>Apply appropriate input validation to filter all user-controllable input of scripting syntax</capec:Security_Control_Description>
+                                 </capec:Security_Control>
+                                 <capec:Security_Control ID="4" type="Preventative">
+                                    <capec:Security_Control_Description>Appropriately encode all browser output to avoid scripting syntax</capec:Security_Control_Description>
+                                 </capec:Security_Control>
+                                 <capec:Security_Control ID="5" type="Preventative">
+                                    <capec:Security_Control_Description>Actively monitor the application and either deny or redirect requests from origins that appear to be generating XSS probes.</capec:Security_Control_Description>
+                                 </capec:Security_Control>
+                              </capec:Security_Controls>
+                           </capec:Custom_Attack_Step>
+                        </capec:Attack_Step>
+                        <capec:Attack_Step ID="3">
+                           <capec:Custom_Attack_Step>
+                              <capec:Attack_Step_Title>Content spoofing</capec:Attack_Step_Title>
+                              <capec:Attack_Step_Description>
+                                 <capec:Text>By manipulating the content, the attacker targets the information that the user would like to get from the website.</capec:Text>
+                              </capec:Attack_Step_Description>
+                              <capec:Attack_Step_Techniques>
+                                 <capec:Attack_Step_Technique ID="1">
+                                    <capec:Attack_Step_Technique_Description>
+                                       <capec:Text>Develop malicious JavaScript that is injected through vectors identified during the Experiment Phase and loaded by the victim's browser and exposes attacker-modified invalid information to the user on the current web page.</capec:Text>
+                                    </capec:Attack_Step_Technique_Description>
+                                    <capec:Environments>env-Web</capec:Environments>
+                                 </capec:Attack_Step_Technique>
+                              </capec:Attack_Step_Techniques>
+                              <capec:Outcomes>
+                                 <capec:Outcome ID="1" type="Success">
+                                    <capec:Outcome_Description>The user sees a page containing wrong information</capec:Outcome_Description>
+                                 </capec:Outcome>
+                              </capec:Outcomes>
+                              <capec:Security_Controls>
+                                 <capec:Security_Control ID="1" type="Detective">
+                                    <capec:Security_Control_Description>Monitor server logs for scripting parameters.</capec:Security_Control_Description>
+                                 </capec:Security_Control>
+                                 <capec:Security_Control ID="2" type="Detective">
+                                    <capec:Security_Control_Description>Monitor server logs for referrers. If users are being tricked into clicking XSS links through forums or other web postings, their web browsers will be providing Referrer headers most of the time. These can help indicate that the actual request is illegitimate.</capec:Security_Control_Description>
+                                 </capec:Security_Control>
+                                 <capec:Security_Control ID="3" type="Preventative">
+                                    <capec:Security_Control_Description>Apply appropriate input validation to filter all user-controllable input of scripting syntax</capec:Security_Control_Description>
+                                 </capec:Security_Control>
+                                 <capec:Security_Control ID="4" type="Preventative">
+                                    <capec:Security_Control_Description>Appropriately encode all browser output to avoid scripting syntax</capec:Security_Control_Description>
+                                 </capec:Security_Control>
+                                 <capec:Security_Control ID="5" type="Preventative">
+                                    <capec:Security_Control_Description>Actively monitor the application and either deny or redirect requests from origins that appear to be generating XSS probes.</capec:Security_Control_Description>
+                                 </capec:Security_Control>
+                              </capec:Security_Controls>
+                           </capec:Custom_Attack_Step>
+                        </capec:Attack_Step>
+                     </capec:Attack_Steps>
+                  </capec:Attack_Phase>
+               </capec:Attack_Phases>
+            </capec:Attack_Execution_Flow>
+         </capec:Description>
+         <capec:Attack_Prerequisites>
+            <capec:Attack_Prerequisite>
+               <capec:Text>Target client software must allow scripting such as JavaScript.</capec:Text>
+            </capec:Attack_Prerequisite>
+         </capec:Attack_Prerequisites>
+         <capec:Typical_Severity>High</capec:Typical_Severity>
+         <capec:Typical_Likelihood_of_Exploit>
+            <capec:Likelihood>High</capec:Likelihood>
+            <capec:Explanation/>
+         </capec:Typical_Likelihood_of_Exploit>
+         <capec:Methods_of_Attack>
+            <capec:Method_of_Attack>Injection</capec:Method_of_Attack>
+            <capec:Method_of_Attack>Protocol Manipulation</capec:Method_of_Attack>
+         </capec:Methods_of_Attack>
+         <capec:Examples-Instances>
+            <capec:Example-Instance>
+               <capec:Example-Instance_Description>
+                  <capec:Text>In this example, the attacker tries to get &lt;script&gt;alert(1)&lt;/script&gt; executed by the victim's browser. The target application employs regular expressions to make sure no script is being passed through the application to the web page; such a regular expression could be ((?i)script), and the application would replace all matches by this regex by the empty string. An attacker will then create a special payload to bypass this filter:</capec:Text>
+                  <capec:Block Block_Nature="Attack">
+                     <capec:Code>&lt;scriscriptpt&gt;alert(1)&lt;/scscriptript&gt;</capec:Code>
+                  </capec:Block>
+                  <capec:Text>when the applications gets this input string, it will replace all "script" (case insensitive) by the empty string and the resulting input will be the desired vector by the attacker:</capec:Text>
+                  <capec:Block Block_Nature="Result">
+                     <capec:Code>&lt;script&gt;alert(1)&lt;/script&gt;</capec:Code>
+                  </capec:Block>
+                  <capec:Text>In this example, we assume that the application needs to write a particular string in a client-side JavaScript context (e.g., &lt;script&gt;HERE&lt;/script&gt;). For the attacker to execute the same payload as in the previous example, he would need to send alert(1) if there was no filtering. The application makes use of the following regular expression as filter</capec:Text>
+                  <capec:Block Block_Nature="Mitigation_Code">
+                     <capec:Code>((\w+)\s*\(.*\)|alert|eval|function|document)</capec:Code>
+                  </capec:Block>
+                  <capec:Text>and replaces all matches by the empty string. For example each occurrence of alert(), eval(), foo() or even the string "alert" would be stripped. An attacker will then create a special payload to bypass this filter:</capec:Text>
+                  <capec:Block Block_Nature="Attack">
+                     <capec:Code>this['al' + 'ert'](1)</capec:Code>
+                  </capec:Block>
+                  <capec:Text>when the applications gets this input string, it won't replace anything and this piece of JavaScript has exactly the same runtime meaning as alert(1). The attacker could also have used non-alphanumeric XSS vectors to bypass the filter; for example,</capec:Text>
+                  <capec:Block Block_Nature="Attack">
+                     <capec:Code>($=[$=[]][(__=!$+$)[_=-~-~-~$]+({}+$)[_/_]+($$=($_=!''+$)[_/_]+$_[+$])])()[__[_/_]+__[_+~$]+$_[_]+$$](_/_)</capec:Code>
+                  </capec:Block>
+                  <capec:Text>would be executed by the JavaScript engine like alert(1) is.</capec:Text>
+               </capec:Example-Instance_Description>
+            </capec:Example-Instance>
+         </capec:Examples-Instances>
+         <capec:Attacker_Skills_or_Knowledge_Required>
+            <capec:Attacker_Skill_or_Knowledge_Required>
+               <capec:Skill_or_Knowledge_Level>Low</capec:Skill_or_Knowledge_Level>
+               <capec:Skill_or_Knowledge_Type>
+                  <capec:Text>To inject the malicious payload in a web page</capec:Text>
+               </capec:Skill_or_Knowledge_Type>
+            </capec:Attacker_Skill_or_Knowledge_Required>
+            <capec:Attacker_Skill_or_Knowledge_Required>
+               <capec:Skill_or_Knowledge_Level>High</capec:Skill_or_Knowledge_Level>
+               <capec:Skill_or_Knowledge_Type>
+                  <capec:Text>To bypass non trivial filters in the application</capec:Text>
+               </capec:Skill_or_Knowledge_Type>
+            </capec:Attacker_Skill_or_Knowledge_Required>
+         </capec:Attacker_Skills_or_Knowledge_Required>
+         <capec:Resources_Required>
+            <capec:Text>Ability to send HTTP request to a web application.</capec:Text>
+         </capec:Resources_Required>
+         <capec:Solutions_and_Mitigations>
+            <capec:Solution_or_Mitigation>
+               <capec:Text>Design: Use browser technologies that do not allow client side scripting.</capec:Text>
+            </capec:Solution_or_Mitigation>
+            <capec:Solution_or_Mitigation>
+               <capec:Text>Design: Utilize strict type, character, and encoding enforcement</capec:Text>
+            </capec:Solution_or_Mitigation>
+            <capec:Solution_or_Mitigation>
+               <capec:Text>Implementation: Ensure all content that is delivered to client is sanitized against an acceptable content specification.</capec:Text>
+            </capec:Solution_or_Mitigation>
+            <capec:Solution_or_Mitigation>
+               <capec:Text>Implementation: Ensure all content coming from the client is using the same encoding; if not, the server-side application must canonicalize the data before applying any filtering.</capec:Text>
+            </capec:Solution_or_Mitigation>
+            <capec:Solution_or_Mitigation>
+               <capec:Text>Implementation: Perform input validation for all remote content, including remote and user-generated content</capec:Text>
+            </capec:Solution_or_Mitigation>
+            <capec:Solution_or_Mitigation>
+               <capec:Text>Implementation: Perform output validation for all remote content.</capec:Text>
+            </capec:Solution_or_Mitigation>
+            <capec:Solution_or_Mitigation>
+               <capec:Text>Implementation: Disable scripting languages such as JavaScript in browser</capec:Text>
+            </capec:Solution_or_Mitigation>
+            <capec:Solution_or_Mitigation>
+               <capec:Text>Implementation: Patching software. There are many attack vectors for XSS on the client side and the server side. Many vulnerabilities are fixed in service packs for browser, web servers, and plug in technologies, staying current on patch release that deal with XSS countermeasures mitigates this.</capec:Text>
+            </capec:Solution_or_Mitigation>
+         </capec:Solutions_and_Mitigations>
+         <capec:Attack_Motivation-Consequences>
+            <capec:Attack_Motivation-Consequence>
+               <capec:Consequence_Scope>Integrity</capec:Consequence_Scope>
+               <capec:Consequence_Technical_Impact>Modify files or directories</capec:Consequence_Technical_Impact>
+            </capec:Attack_Motivation-Consequence>
+            <capec:Attack_Motivation-Consequence>
+               <capec:Consequence_Scope>Confidentiality</capec:Consequence_Scope>
+               <capec:Consequence_Technical_Impact>Read files or directories</capec:Consequence_Technical_Impact>
+            </capec:Attack_Motivation-Consequence>
+            <capec:Attack_Motivation-Consequence>
+               <capec:Consequence_Scope>Integrity</capec:Consequence_Scope>
+               <capec:Consequence_Technical_Impact>Modify application data</capec:Consequence_Technical_Impact>
+            </capec:Attack_Motivation-Consequence>
+            <capec:Attack_Motivation-Consequence>
+               <capec:Consequence_Scope>Confidentiality</capec:Consequence_Scope>
+               <capec:Consequence_Technical_Impact>Read application data</capec:Consequence_Technical_Impact>
+            </capec:Attack_Motivation-Consequence>
+            <capec:Attack_Motivation-Consequence>
+               <capec:Consequence_Scope>Authorization</capec:Consequence_Scope>
+               <capec:Consequence_Technical_Impact>Execute unauthorized code or commands</capec:Consequence_Technical_Impact>
+               <capec:Consequence_Note>
+                  <capec:Text>Run Arbitrary Code</capec:Text>
+               </capec:Consequence_Note>
+            </capec:Attack_Motivation-Consequence>
+            <capec:Attack_Motivation-Consequence>
+               <capec:Consequence_Scope>Accountability</capec:Consequence_Scope>
+               <capec:Consequence_Scope>Authentication</capec:Consequence_Scope>
+               <capec:Consequence_Scope>Authorization</capec:Consequence_Scope>
+               <capec:Consequence_Scope>Non-Repudiation</capec:Consequence_Scope>
+               <capec:Consequence_Technical_Impact>Gain privileges / assume identity</capec:Consequence_Technical_Impact>
+            </capec:Attack_Motivation-Consequence>
+            <capec:Attack_Motivation-Consequence>
+               <capec:Consequence_Scope>Access_Control</capec:Consequence_Scope>
+               <capec:Consequence_Scope>Authorization</capec:Consequence_Scope>
+               <capec:Consequence_Technical_Impact>Bypass protection mechanism</capec:Consequence_Technical_Impact>
+            </capec:Attack_Motivation-Consequence>
+         </capec:Attack_Motivation-Consequences>
+         <capec:Injection_Vector>
+            <capec:Text>Any HTTP Request transport variables (GET, POST, Headers, etc.)</capec:Text>
+         </capec:Injection_Vector>
+         <capec:Payload>
+            <capec:Text>XSS malicious script formed in non-traditional syntax</capec:Text>
+         </capec:Payload>
+         <capec:Activation_Zone>
+            <capec:Text>Client web browser where script is executed</capec:Text>
+         </capec:Activation_Zone>
+         <capec:Payload_Activation_Impact>
+            <capec:Description>
+               <capec:Text>Client web browser may be used to steal session data, passwords, cookies, and other tokens.</capec:Text>
+            </capec:Description>
+         </capec:Payload_Activation_Impact>
+         <capec:Related_Weaknesses>
+            <capec:Related_Weakness>
+               <capec:CWE_ID>79<!--Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')--></capec:CWE_ID>
+               <capec:Weakness_Relationship_Type>Targeted</capec:Weakness_Relationship_Type>
+            </capec:Related_Weakness>
+            <capec:Related_Weakness>
+               <capec:CWE_ID>87<!--Improper Neutralization of Alternate XSS Syntax--></capec:CWE_ID>
+               <capec:Weakness_Relationship_Type>Targeted</capec:Weakness_Relationship_Type>
+            </capec:Related_Weakness>
+            <capec:Related_Weakness>
+               <capec:CWE_ID>85<!--Doubled Character XSS Manipulations--></capec:CWE_ID>
+               <capec:Weakness_Relationship_Type>Targeted</capec:Weakness_Relationship_Type>
+            </capec:Related_Weakness>
+            <capec:Related_Weakness>
+               <capec:CWE_ID>20<!--Improper Input Validation--></capec:CWE_ID>
+               <capec:Weakness_Relationship_Type>Targeted</capec:Weakness_Relationship_Type>
+            </capec:Related_Weakness>
+            <capec:Related_Weakness>
+               <capec:CWE_ID>86<!--Improper Neutralization of Invalid Characters in Identifiers in Web Pages--></capec:CWE_ID>
+               <capec:Weakness_Relationship_Type>Targeted</capec:Weakness_Relationship_Type>
+            </capec:Related_Weakness>
+            <capec:Related_Weakness>
+               <capec:CWE_ID>692<!--Incomplete Blacklist to Cross-Site Scripting--></capec:CWE_ID>
+               <capec:Weakness_Relationship_Type>Targeted</capec:Weakness_Relationship_Type>
+            </capec:Related_Weakness>
+            <capec:Related_Weakness>
+               <capec:CWE_ID>697<!--Insufficient Comparison--></capec:CWE_ID>
+               <capec:Weakness_Relationship_Type>Targeted</capec:Weakness_Relationship_Type>
+            </capec:Related_Weakness>
+            <capec:Related_Weakness>
+               <capec:CWE_ID>713<!--OWASP Top Ten 2007 Category A2 - Injection Flaws--></capec:CWE_ID>
+               <capec:Weakness_Relationship_Type>Targeted</capec:Weakness_Relationship_Type>
+            </capec:Related_Weakness>
+            <capec:Related_Weakness>
+               <capec:CWE_ID>71<!--Apple '.DS_Store'--></capec:CWE_ID>
+               <capec:Weakness_Relationship_Type>Targeted</capec:Weakness_Relationship_Type>
+            </capec:Related_Weakness>
+         </capec:Related_Weaknesses>
+         <capec:Related_Attack_Patterns>
+            <capec:Related_Attack_Pattern>
+               <capec:Relationship_Views>
+                  <capec:Relationship_View_ID Ordinal="Primary">1000</capec:Relationship_View_ID>
+               </capec:Relationship_Views>
+               <capec:Relationship_Target_Form>Attack Pattern</capec:Relationship_Target_Form>
+               <capec:Relationship_Nature>ChildOf</capec:Relationship_Nature>
+               <capec:Relationship_Target_ID>18<!--Embedding Scripts in Non-Script Elements--></capec:Relationship_Target_ID>
+               <capec:Relationship_Description>
+                  <capec:Text>http://capec.mitre.org/data/definitions/18.html</capec:Text>
+               </capec:Relationship_Description>
+            </capec:Related_Attack_Pattern>
+            <capec:Related_Attack_Pattern>
+               <capec:Relationship_Views>
+                  <capec:Relationship_View_ID Ordinal="Primary">1000</capec:Relationship_View_ID>
+               </capec:Relationship_Views>
+               <capec:Relationship_Target_Form>Attack Pattern</capec:Relationship_Target_Form>
+               <capec:Relationship_Nature>ChildOf</capec:Relationship_Nature>
+               <capec:Relationship_Target_ID>220<!--Client-Server Protocol Manipulation--></capec:Relationship_Target_ID>
+               <capec:Relationship_Description>
+                  <capec:Text>http://capec.mitre.org/data/definitions/220.html</capec:Text>
+               </capec:Relationship_Description>
+            </capec:Related_Attack_Pattern>
+         </capec:Related_Attack_Patterns>
+         <capec:Purposes>
+            <capec:Purpose>Exploitation</capec:Purpose>
+         </capec:Purposes>
+         <capec:CIA_Impact>
+            <capec:Confidentiality_Impact>High</capec:Confidentiality_Impact>
+            <capec:Integrity_Impact>High</capec:Integrity_Impact>
+            <capec:Availability_Impact>Low</capec:Availability_Impact>
+         </capec:CIA_Impact>
+         <capec:Technical_Context>
+            <capec:Architectural_Paradigms>
+               <capec:Architectural_Paradigm>Client-Server</capec:Architectural_Paradigm>
+               <capec:Architectural_Paradigm>n-Tier</capec:Architectural_Paradigm>
+            </capec:Architectural_Paradigms>
+            <capec:Frameworks>
+               <capec:Framework>All</capec:Framework>
+            </capec:Frameworks>
+            <capec:Platforms>
+               <capec:Platform>All</capec:Platform>
+            </capec:Platforms>
+            <capec:Languages>
+               <capec:Language>All</capec:Language>
+            </capec:Languages>
+         </capec:Technical_Context>
+         <capec:References>
+            <capec:Reference Reference_ID="REF-9" Local_Reference_ID="R.199.1">
+               <capec:Reference_Title>OWASP Cheatsheets</capec:Reference_Title>
+               <capec:Reference_Section>XSS Filter Evasion Cheat Sheet</capec:Reference_Section>
+               <capec:Reference_Publisher>The Open Web Application Security Project (OWASP)</capec:Reference_Publisher>
+               <capec:Reference_Link>https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet</capec:Reference_Link>
+            </capec:Reference>
+            <capec:Reference Reference_ID="REF-4" Local_Reference_ID="R.199.2">
+               <capec:Reference_Title>OWASP Testing Guide</capec:Reference_Title>
+               <capec:Reference_Section>Testing for Cross site scripting</capec:Reference_Section>
+               <capec:Reference_Edition>v2</capec:Reference_Edition>
+               <capec:Reference_Publisher>The Open Web Application Security Project (OWASP)</capec:Reference_Publisher>
+               <capec:Reference_Link>http://www.owasp.org/index.php/Testing_for_Cross_site_scripting</capec:Reference_Link>
+            </capec:Reference>
+            <capec:Reference Local_Reference_ID="R.199.3">
+               <capec:Reference_Title>Non-alphanumeric XSS cheat sheet</capec:Reference_Title>
+               <capec:Reference_Link>http://sla.ckers.org/forum/read.php?24,28687</capec:Reference_Link>
+            </capec:Reference>
+            <capec:Reference Reference_ID="REF-1" Local_Reference_ID="R.199.4">
+               <capec:Reference_Title>WASC Threat Classification 2.0</capec:Reference_Title>
+               <capec:Reference_Section>WASC-08 - Cross Site Scripting</capec:Reference_Section>
+               <capec:Reference_Publisher>The Web Application Security Consortium (WASC)</capec:Reference_Publisher>
+               <capec:Reference_PubDate>2010</capec:Reference_PubDate>
+               <capec:Reference_Link>http://projects.webappsec.org/Cross-Site+Scripting</capec:Reference_Link>
+            </capec:Reference>
+         </capec:References>
+         <capec:Content_History>
+            <capec:Submissions>
+               <capec:Submission Submission_Source="Internal_CAPEC_Team">
+                  <capec:Submitter>CAPEC Content Team</capec:Submitter>
+                  <capec:Submitter_Organization>The MITRE Corporation</capec:Submitter_Organization>
+                  <capec:Submission_Date>2014-06-23</capec:Submission_Date>
+               </capec:Submission>
+            </capec:Submissions>
+         </capec:Content_History>
+      </capec:Attack_Pattern>
+	  
+	<capec:Attack_Pattern ID="245"
+                            Name="Cross-Site Scripting Using Doubled Characters, e.g. %3C%3Cscript"
+                            Pattern_Abstraction="Detailed"
+                            Pattern_Completeness="Stub"
+                            Status="Draft">
+         <capec:Description>
+            <capec:Summary>
+               <capec:Text>The attacker bypasses input validation by using doubled characters in order to perform a cross-site scripting attack. Some filters fail to recognize dangerous sequences if they are preceded by repeated characters. For example, by doubling the &lt; before a script command, (&lt;&lt;script or %3C%3script using URI encoding) the filters of some web applications may fail to recognize the presence of a script tag. If the targeted server is vulnerable to this type of bypass, the attacker can create a crafted URL or other trap to cause a victim to view a page on the targeted server where the malicious content is executed, as per a normal XSS attack.</capec:Text>
+            </capec:Summary>
+         </capec:Description>
+         <capec:Attack_Prerequisites>
+            <capec:Attack_Prerequisite>
+               <capec:Text>The targeted web application does not fully normalize input before checking for prohibited syntax. In particular, it must fail to recognize prohibited methods preceded by certain sequences of repeated characters.</capec:Text>
+            </capec:Attack_Prerequisite>
+         </capec:Attack_Prerequisites>
+         <capec:Typical_Severity>Medium</capec:Typical_Severity>
+         <capec:Resources_Required>
+            <capec:Text>The attacker must trick the victim into following a crafted link to a vulnerable server or view a web post where the dangerous commands are executed.</capec:Text>
+         </capec:Resources_Required>
+         <capec:Solutions_and_Mitigations>
+            <capec:Solution_or_Mitigation>
+               <capec:Text>Design: Use libraries and templates that minimize unfiltered input.</capec:Text>
+            </capec:Solution_or_Mitigation>
+            <capec:Solution_or_Mitigation>
+               <capec:Text>Implementation: Normalize, filter and sanitize all user supplied fields.</capec:Text>
+            </capec:Solution_or_Mitigation>
+            <capec:Solution_or_Mitigation>
+               <capec:Text>Implementation: The victim should configure the browser to minimize active content from untrusted sources.</capec:Text>
+            </capec:Solution_or_Mitigation>
+         </capec:Solutions_and_Mitigations>
+         <capec:Related_Weaknesses>
+            <capec:Related_Weakness>
+               <capec:CWE_ID>79<!--Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')--></capec:CWE_ID>
+               <capec:Weakness_Relationship_Type>Targeted</capec:Weakness_Relationship_Type>
+            </capec:Related_Weakness>
+            <capec:Related_Weakness>
+               <capec:CWE_ID>85<!--Doubled Character XSS Manipulations--></capec:CWE_ID>
+               <capec:Weakness_Relationship_Type>Targeted</capec:Weakness_Relationship_Type>
+            </capec:Related_Weakness>
+         </capec:Related_Weaknesses>
+         <capec:Related_Vulnerabilities>
+            <capec:Related_Vulnerability>
+               <capec:Vulnerability_ID>CVE-2008-2070</capec:Vulnerability_ID>
+               <capec:Vulnerability_Description>
+                  <capec:Text>The WHM interface 11.15.0 for cPanel 11.18 before 11.18.4 and 11.22 before 11.22.3 allows remote attackers to bypass XSS protection and inject arbitrary script or HTML via repeated, improperly-ordered "&lt;" and "&gt;" characters in the (1) issue parameter to scripts2/knowlegebase, (2) user parameter to scripts2/changeip, (3) search parameter to scripts2/listaccts, and other unspecified vectors.</capec:Text>
+               </capec:Vulnerability_Description>
+            </capec:Related_Vulnerability>
+         </capec:Related_Vulnerabilities>
+         <capec:Related_Attack_Patterns>
+            <capec:Related_Attack_Pattern>
+               <capec:Relationship_Views>
+                  <capec:Relationship_View_ID Ordinal="Primary">1000</capec:Relationship_View_ID>
+               </capec:Relationship_Views>
+               <capec:Relationship_Target_Form>Attack Pattern</capec:Relationship_Target_Form>
+               <capec:Relationship_Nature>ChildOf</capec:Relationship_Nature>
+               <capec:Relationship_Target_ID>18<!--Embedding Scripts in Non-Script Elements--></capec:Relationship_Target_ID>
+            </capec:Related_Attack_Pattern>
+         </capec:Related_Attack_Patterns>
+         <capec:References>
+            <capec:Reference Local_Reference_ID="R.245.1">
+               <capec:Reference_Author>Matteo Carli</capec:Reference_Author>
+               <capec:Reference_Title>XSS and CSRF vulnerability on Cpanel</capec:Reference_Title>
+               <capec:Reference_Publication>Symantec Connect</capec:Reference_Publication>
+               <capec:Reference_Publisher>SecurityFocus</capec:Reference_Publisher>
+               <capec:Reference_PubDate>May 9, 2008</capec:Reference_PubDate>
+               <capec:Reference_Link>http://www.securityfocus.com/archive/1/archive/1/491864/100/0/threaded</capec:Reference_Link>
+            </capec:Reference>
+         </capec:References>
+         <capec:Content_History>
+            <capec:Submissions>
+               <capec:Submission Submission_Source="Internal_CAPEC_Team">
+                  <capec:Submitter>CAPEC Content Team</capec:Submitter>
+                  <capec:Submitter_Organization>The MITRE Corporation</capec:Submitter_Organization>
+                  <capec:Submission_Date>2014-06-23</capec:Submission_Date>
+               </capec:Submission>
+            </capec:Submissions>
+         </capec:Content_History>
+      </capec:Attack_Pattern>
+	  
+	  
+	  
+	  
+	</capec:Attack_Patterns>
+</capec:Attack_Pattern_Catalog>
