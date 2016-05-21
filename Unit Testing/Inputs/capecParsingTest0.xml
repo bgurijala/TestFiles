@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<capec:Attack_Pattern_Catalog xmlns:capec="http://capec.mitre.org/capec-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                              Catalog_Name="CAPEC"
+                              Catalog_Version="2.8"
+                              Catalog_Date="2015-12-07"
+                              xsi:schemaLocation="http://capec.mitre.org/capec-2 http://capec.mitre.org/data/xsd/ap_schema_v2.7.1.xsd  http://cybox.mitre.org/cybox-2 http://cybox.mitre.org/XMLSchema/core/2.1/cybox_core.xsd">
+							  
+
+	<capec:Attack_Patterns>
+     
+	</capec:Attack_Patterns>
+</capec:Attack_Pattern_Catalog>
