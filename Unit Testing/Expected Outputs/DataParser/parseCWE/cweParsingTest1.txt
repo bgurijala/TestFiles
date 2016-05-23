@@ -12,16 +12,3 @@ cwePattern[0].weaknessSubSource =
 cwePattern[0].weaknessSubmitterOrg = 
 cwePattern[0].weaknessSubDate = 
 
-cwePattern[1].weaknessID = 
-cwePattern[1].weaknessName =  
-cwePattern[1].weaknessSummary = 
-cwePattern[1].weaknessLikelihood = 
-cwePattern[1].weaknessModSource = 
-cwePattern[1].weaknessModifier = 
-cwePattern[1].weaknessModifierOrg = 
-cwePattern[1].weaknessModDate = 
-cwePattern[1].relatedAttackPatterns = 
-cwePattern[1].weaknessSubmitter = 
-cwePattern[1].weaknessSubSource = 
-cwePattern[1].weaknessSubmitterOrg = 
-cwePattern[1].weaknessSubDate = 

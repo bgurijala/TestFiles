@@ -1,0 +1,13 @@
+<Weakness_Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:capec="http://capec.mitre.org/capec-2"
+                  Catalog_Name="CWE"
+                  Catalog_Version="2.9"
+                  Catalog_Date="2015-12-07"
+                  xsi:noNamespaceSchemaLocation="http://cwe.mitre.org/data/xsd/cwe_schema_v5.4.2.xsd">
+  
+ 
+   <Weaknesses>
+
+   </Weaknesses>
+ 
+</Weakness_Catalog>

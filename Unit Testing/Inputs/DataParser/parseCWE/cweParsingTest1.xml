@@ -1,0 +1,252 @@
+<Weakness_Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns:capec="http://capec.mitre.org/capec-2"
+                  Catalog_Name="CWE"
+                  Catalog_Version="2.9"
+                  Catalog_Date="2015-12-07"
+                  xsi:noNamespaceSchemaLocation="http://cwe.mitre.org/data/xsd/cwe_schema_v5.4.2.xsd">
+  
+ 
+   <Weaknesses>
+         <Weakness ID="85" Name="Doubled Character XSS Manipulations"
+                Weakness_Abstraction="Variant"
+                Status="Draft">
+         <Description>
+            <Description_Summary>The web application does not filter user-controlled input for
+					executable script disguised using doubling of the involved
+					characters.</Description_Summary>
+         </Description>
+         <Relationships>
+            <Relationship>
+               <Relationship_Views>
+                  <Relationship_View_ID Ordinal="Primary">1000</Relationship_View_ID>
+                  <Relationship_View_ID Ordinal="Primary">699</Relationship_View_ID>
+               </Relationship_Views>
+               <Relationship_Target_Form>Weakness</Relationship_Target_Form>
+               <Relationship_Nature>ChildOf</Relationship_Nature>
+               <Relationship_Target_ID>79</Relationship_Target_ID>
+               <!--Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')--></Relationship>
+            <Relationship>
+               <Relationship_Views>
+                  <Relationship_View_ID>1000</Relationship_View_ID>
+               </Relationship_Views>
+               <Relationship_Target_Form>Weakness</Relationship_Target_Form>
+               <Relationship_Nature>PeerOf</Relationship_Nature>
+               <Relationship_Target_ID>675</Relationship_Target_ID>
+               <!--Duplicate Operations on Resource--></Relationship>
+            <Relationship>
+               <Relationship_Views>
+                  <Relationship_View_ID Ordinal="Primary">888</Relationship_View_ID>
+               </Relationship_Views>
+               <Relationship_Target_Form>Category</Relationship_Target_Form>
+               <Relationship_Nature>ChildOf</Relationship_Nature>
+               <Relationship_Target_ID>990</Relationship_Target_ID>
+               <!--SFP Secondary Cluster: Tainted Input to Command--></Relationship>
+         </Relationships>
+         <Weakness_Ordinalities>
+            <Weakness_Ordinality>
+               <Ordinality>Primary</Ordinality>
+            </Weakness_Ordinality>
+         </Weakness_Ordinalities>
+         <Applicable_Platforms>
+            <Languages>
+               <Language_Class Language_Class_Description="All"/>
+            </Languages>
+         </Applicable_Platforms>
+         <Time_of_Introduction>
+            <Introductory_Phase>Implementation</Introductory_Phase>
+         </Time_of_Introduction>
+         <Common_Consequences>
+            <Common_Consequence>
+               <Consequence_Scope>Confidentiality</Consequence_Scope>
+               <Consequence_Scope>Integrity</Consequence_Scope>
+               <Consequence_Scope>Availability</Consequence_Scope>
+               <Consequence_Technical_Impact>Read application data</Consequence_Technical_Impact>
+               <Consequence_Technical_Impact>Execute unauthorized code or
+                  commands</Consequence_Technical_Impact>
+            </Common_Consequence>
+         </Common_Consequences>
+         <Potential_Mitigations>
+            <Mitigation>
+               <Mitigation_Phase>Implementation</Mitigation_Phase>
+               <Mitigation_Description>
+                  <Text>Resolve all filtered input to absolute or canonical representations
+							before processing.</Text>
+               </Mitigation_Description>
+            </Mitigation>
+            <Mitigation>
+               <Mitigation_Phase>Implementation</Mitigation_Phase>
+               <Mitigation_Description>
+                  <Text>Carefully check each input parameter against a rigorous positive
+							specification (white list) defining the specific characters and format
+							allowed. All input should be neutralized, not just parameters that the
+							user is supposed to specify, but all data in the request, including tag
+							attributes, hidden fields, cookies, headers, the URL itself, and so
+							forth. A common mistake that leads to continuing XSS vulnerabilities is
+							to validate only fields that are expected to be redisplayed by the site.
+							We often encounter data from the request that is reflected by the
+							application server or the application that the development team did not
+							anticipate. Also, a field that is not currently reflected may be used by
+							a future developer. Therefore, validating ALL parts of the HTTP request
+							is recommended.</Text>
+               </Mitigation_Description>
+            </Mitigation>
+            <Mitigation Mitigation_ID="MIT-30.1">
+               <Mitigation_Phase>Implementation</Mitigation_Phase>
+               <Mitigation_Strategy>Output Encoding</Mitigation_Strategy>
+               <Mitigation_Description>
+                  <Text>Use and specify an output encoding that can be handled by the
+							downstream component that is reading the output. Common encodings
+							include ISO-8859-1, UTF-7, and UTF-8. When an encoding is not specified,
+							a downstream component may choose a different encoding, either by
+							assuming a default encoding or automatically inferring which encoding is
+							being used, which can be erroneous. When the encodings are inconsistent,
+							the downstream component might treat some character or byte sequences as
+							special, even if they are not special in the original encoding.
+							Attackers might then be able to exploit this discrepancy and conduct
+							injection attacks; they even might be able to bypass protection
+							mechanisms that assume the original encoding is also being used by the
+							downstream component. </Text>
+                  <Text>The problem of inconsistent output encodings often arises in web
+							pages. If an encoding is not specified in an HTTP header, web browsers
+							often guess about which encoding is being used. This can open up the
+							browser to subtle XSS attacks. </Text>
+               </Mitigation_Description>
+            </Mitigation>
+            <Mitigation Mitigation_ID="MIT-43">
+               <Mitigation_Phase>Implementation</Mitigation_Phase>
+               <Mitigation_Description>
+                  <Text>With Struts, write all data from form beans with the bean's filter
+							attribute set to true.</Text>
+               </Mitigation_Description>
+            </Mitigation>
+            <Mitigation Mitigation_ID="MIT-31">
+               <Mitigation_Phase>Implementation</Mitigation_Phase>
+               <Mitigation_Strategy>Identify and Reduce Attack Surface</Mitigation_Strategy>
+               <Mitigation_Description>
+                  <Text>To help mitigate XSS attacks against the user's session cookie, set
+							the session cookie to be HttpOnly. In browsers that support the HttpOnly
+							feature (such as more recent versions of Internet Explorer and Firefox),
+							this attribute can prevent the user's session cookie from being
+							accessible to malicious client-side scripts that use document.cookie.
+							This is not a complete solution, since HttpOnly is not supported by all
+							browsers. More importantly, XMLHTTPRequest and other powerful browser
+							technologies provide read access to HTTP headers, including the
+							Set-Cookie header in which the HttpOnly flag is set.</Text>
+               </Mitigation_Description>
+               <Mitigation_Effectiveness>Defense in Depth</Mitigation_Effectiveness>
+            </Mitigation>
+         </Potential_Mitigations>
+         <Causal_Nature>Explicit</Causal_Nature>
+         <Observed_Examples>
+            <Observed_Example>
+               <Observed_Example_Reference>CVE-2002-2086</Observed_Example_Reference>
+               <Observed_Example_Description>XSS using
+						"&lt;script".</Observed_Example_Description>
+            </Observed_Example>
+            <Observed_Example>
+               <Observed_Example_Reference>CVE-2000-0116</Observed_Example_Reference>
+               <Observed_Example_Description>Encoded "javascript" in IMG
+						tag.</Observed_Example_Description>
+            </Observed_Example>
+            <Observed_Example>
+               <Observed_Example_Reference>CVE-2001-1157</Observed_Example_Reference>
+               <Observed_Example_Description>Extra "&lt;" in front of SCRIPT
+						tag.</Observed_Example_Description>
+            </Observed_Example>
+         </Observed_Examples>
+         <Taxonomy_Mappings>
+            <Taxonomy_Mapping Mapped_Taxonomy_Name="PLOVER">
+               <Mapped_Node_Name>DOUBLE - Doubled character XSS manipulations, e.g.
+						"&lt;script"</Mapped_Node_Name>
+            </Taxonomy_Mapping>
+            <Taxonomy_Mapping Mapped_Taxonomy_Name="Software Fault Patterns">
+               <Mapped_Node_Name>Tainted input to command</Mapped_Node_Name>
+               <Mapped_Node_ID>SFP24</Mapped_Node_ID>
+            </Taxonomy_Mapping>
+         </Taxonomy_Mappings>
+         <Related_Attack_Patterns>
+            <Related_Attack_Pattern CAPEC_Version="2.8">
+               <CAPEC_ID>199</CAPEC_ID>
+            </Related_Attack_Pattern>
+            <Related_Attack_Pattern CAPEC_Version="2.8">
+               <CAPEC_ID>244</CAPEC_ID>
+            </Related_Attack_Pattern>
+            <Related_Attack_Pattern CAPEC_Version="2.8">
+               <CAPEC_ID>245</CAPEC_ID>
+            </Related_Attack_Pattern>
+            <Related_Attack_Pattern CAPEC_Version="2.8">
+               <CAPEC_ID>32</CAPEC_ID>
+            </Related_Attack_Pattern>
+         </Related_Attack_Patterns>
+         <Content_History>
+            <Submission Submission_Source="Externally_Mined">
+               <Submitter>PLOVER</Submitter>
+            </Submission>
+            <Modification Modification_Source="External">
+               <Modifier>Eric Dalci</Modifier>
+               <Modifier_Organization>Cigital</Modifier_Organization>
+               <Modification_Date>2008-07-01</Modification_Date>
+               <Modification_Comment>updated Time_of_Introduction</Modification_Comment>
+            </Modification>
+            <Modification Modification_Source="Internal">
+               <Modifier>CWE Content Team</Modifier>
+               <Modifier_Organization>MITRE</Modifier_Organization>
+               <Modification_Date>2008-09-08</Modification_Date>
+               <Modification_Comment>updated Relationships, Taxonomy_Mappings,
+						Weakness_Ordinalities</Modification_Comment>
+            </Modification>
+            <Modification Modification_Source="Internal">
+               <Modifier>CWE Content Team</Modifier>
+               <Modifier_Organization>MITRE</Modifier_Organization>
+               <Modification_Date>2010-04-05</Modification_Date>
+               <Modification_Comment>updated Related_Attack_Patterns</Modification_Comment>
+            </Modification>
+            <Modification Modification_Source="Internal">
+               <Modifier>CWE Content Team</Modifier>
+               <Modifier_Organization>MITRE</Modifier_Organization>
+               <Modification_Date>2010-06-21</Modification_Date>
+               <Modification_Comment>updated Potential_Mitigations</Modification_Comment>
+            </Modification>
+            <Modification Modification_Source="Internal">
+               <Modifier>CWE Content Team</Modifier>
+               <Modifier_Organization>MITRE</Modifier_Organization>
+               <Modification_Date>2010-12-13</Modification_Date>
+               <Modification_Comment>updated Description</Modification_Comment>
+            </Modification>
+            <Modification Modification_Source="Internal">
+               <Modifier>CWE Content Team</Modifier>
+               <Modifier_Organization>MITRE</Modifier_Organization>
+               <Modification_Date>2011-03-29</Modification_Date>
+               <Modification_Comment>updated Potential_Mitigations</Modification_Comment>
+            </Modification>
+            <Modification Modification_Source="Internal">
+               <Modifier>CWE Content Team</Modifier>
+               <Modifier_Organization>MITRE</Modifier_Organization>
+               <Modification_Date>2011-06-01</Modification_Date>
+               <Modification_Comment>updated Common_Consequences</Modification_Comment>
+            </Modification>
+            <Modification Modification_Source="Internal">
+               <Modifier>CWE Content Team</Modifier>
+               <Modifier_Organization>MITRE</Modifier_Organization>
+               <Modification_Date>2012-05-11</Modification_Date>
+               <Modification_Comment>updated Related_Attack_Patterns,
+						Relationships</Modification_Comment>
+            </Modification>
+            <Modification Modification_Source="Internal">
+               <Modifier>CWE Content Team</Modifier>
+               <Modifier_Organization>MITRE</Modifier_Organization>
+               <Modification_Date>2012-10-30</Modification_Date>
+               <Modification_Comment>updated Potential_Mitigations</Modification_Comment>
+            </Modification>
+            <Modification Modification_Source="Internal">
+               <Modifier>CWE Content Team</Modifier>
+               <Modifier_Organization>MITRE</Modifier_Organization>
+               <Modification_Date>2014-07-30</Modification_Date>
+               <Modification_Comment>updated Relationships, Taxonomy_Mappings</Modification_Comment>
+            </Modification>
+         </Content_History>
+      </Weakness>
+    
+   </Weaknesses>
+ 
+</Weakness_Catalog>
