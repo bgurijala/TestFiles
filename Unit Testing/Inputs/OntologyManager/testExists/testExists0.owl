@@ -1,0 +1,2406 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:untitled-ontology-19="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#">
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- exploits -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#exploits">
+        <inverseOf rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#isExploitedBy"/>
+    </ObjectProperty>
+    
+
+
+    <!-- hasActivitySource -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#hasActivitySource"/>
+    
+
+
+    <!-- hasAllowedAssetCharSet -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#hasAllowedAssetCharSet"/>
+    
+
+
+    <!-- isExploitedBy -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#isExploitedBy"/>
+    
+
+
+    <!-- isFormalizedAs -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#isFormalizedAs">
+        <inverseOf rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#represents"/>
+    </ObjectProperty>
+    
+
+
+    <!-- isLabelledWithThreatLikelihood -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#isLabelledWithThreatLikelihood"/>
+    
+
+
+    <!-- isLabelledWithThreatSeverity -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#isLabelledWithThreatSeverity"/>
+    
+
+
+    <!-- isLabelledWithWeaknessLikelihood -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#isLabelledWithWeaknessLikelihood"/>
+    
+
+
+    <!-- represents -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#represents"/>
+    
+
+
+    <!-- wasAssociatedWith -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#wasAssociatedWith"/>
+    
+
+
+    <!-- actedOnBehalfOf -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/ns/prov#actedOnBehalfOf"/>
+    
+
+
+    <!-- alternateOf -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/ns/prov#alternateOf"/>
+    
+
+
+    <!-- generated -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/ns/prov#generated">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <inverseOf rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+    </ObjectProperty>
+    
+
+
+    <!-- hadGeneration -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/ns/prov#hadGeneration">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- influenced -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/ns/prov#influenced">
+        <inverseOf rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+    </ObjectProperty>
+    
+
+
+    <!-- invalidated -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/ns/prov#invalidated">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <inverseOf rdf:resource="http://www.w3.org/ns/prov#wasInvalidatedBy"/>
+    </ObjectProperty>
+    
+
+
+    <!-- qualifiedGeneration -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/ns/prov#qualifiedGeneration">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- qualifiedInvalidation -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/ns/prov#qualifiedInvalidation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- specializationOf -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/ns/prov#specializationOf"/>
+    
+
+
+    <!-- used -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/ns/prov#used">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- wasAssociatedWith -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+    
+
+
+    <!-- wasAttributedTo -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasAttributedTo"/>
+    
+
+
+    <!-- wasDerivedFrom -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    
+
+
+    <!-- wasEndedBy -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasEndedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- wasGeneratedBy -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasGeneratedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- wasInfluencedBy -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+    
+
+
+    <!-- wasInvalidatedBy -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasInvalidatedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- wasRevisionOf -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasRevisionOf"/>
+    
+
+
+    <!-- wasStartedBy -->
+
+    <ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasStartedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- hasActivitySummary -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#hasActivitySummary"/>
+    
+
+
+    <!-- hasAgentName -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#hasAgentName"/>
+    
+
+
+    <!-- hasAssetLength -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#hasAssetLength"/>
+    
+
+
+    <!-- hasAssetType -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#hasAssetType"/>
+    
+
+
+    <!-- hasCharacterValue -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#hasCharacterValue"/>
+    
+
+
+    <!-- hasCreationTimeStamp -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#hasCreationTimeStamp"/>
+    
+
+
+    <!-- hasEntityDescription -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#hasEntityDescription"/>
+    
+
+
+    <!-- hasEntityID -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#hasEntityID"/>
+    
+
+
+    <!-- hasEntityName -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#hasEntityName"/>
+    
+
+
+    <!-- hasLikelihood -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#hasLikelihood"/>
+    
+
+
+    <!-- hasMaliciousRepresentations -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#hasMaliciousRepresentations"/>
+    
+
+
+    <!-- hasModificationTimeStamp -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#hasModificationTimeStamp"/>
+    
+
+
+    <!-- hasRetrievalTimeStamp -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#hasRetrievalTimeStamp"/>
+    
+
+
+    <!-- hasSeverity -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#hasSeverity"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- AlphaAmp -->
+
+    <Class rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaAmp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaAmpSemiColon"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHash"/>
+    </Class>
+    
+
+
+    <!-- AlphaAmpSemiColon -->
+
+    <Class rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaAmpSemiColon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHashSemiColon"/>
+    </Class>
+    
+
+
+    <!-- AlphaNum -->
+
+    <Class rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHash"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumBackSlash"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumPercent"/>
+    </Class>
+    
+
+
+    <!-- AlphaNumAmpHash -->
+
+    <Class rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHash">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHashSemiColon"/>
+    </Class>
+    
+
+
+    <!-- AlphaNumAmpHashSemiColon -->
+
+    <Class rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHashSemiColon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+    </Class>
+    
+
+
+    <!-- AlphaNumBackSlash -->
+
+    <Class rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumBackSlash">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+    </Class>
+    
+
+
+    <!-- AlphaNumPercent -->
+
+    <Class rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumPercent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+    </Class>
+    
+
+
+    <!-- Amp -->
+
+    <Class rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Amp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaAmp"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#NumAmpHash"/>
+    </Class>
+    
+
+
+    <!-- Asset -->
+
+    <Class rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Asset">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </Class>
+    
+
+
+    <!-- BckSlsh -->
+
+    <Class rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#BckSlsh">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumBackSlash"/>
+    </Class>
+    
+
+
+    <!-- Characters -->
+
+    <Class rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </Class>
+    
+
+
+    <!-- Creation -->
+
+    <Class rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Creation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </Class>
+    
+
+
+    <!-- Effect -->
+
+    <Class rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Effect">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </Class>
+    
+
+
+    <!-- GrtThan -->
+
+    <Class rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#GrtThan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+    </Class>
+    
+
+
+    <!-- Hsh -->
+
+    <Class rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Hsh">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#NumAmpHash"/>
+    </Class>
+    
+
+
+    <!-- LesThan -->
+
+    <Class rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LesThan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+    </Class>
+    
+
+
+    <!-- Likelihood -->
+
+    <Class rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Likelihood">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </Class>
+    
+
+
+    <!-- Modification -->
+
+    <Class rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Modification">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </Class>
+    
+
+
+    <!-- NumAmpHash -->
+
+    <Class rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#NumAmpHash">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHash"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#NumAmpHashSemiColon"/>
+    </Class>
+    
+
+
+    <!-- NumAmpHashSemiColon -->
+
+    <Class rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#NumAmpHashSemiColon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHashSemiColon"/>
+    </Class>
+    
+
+
+    <!-- Pattern -->
+
+    <Class rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Pattern">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </Class>
+    
+
+
+    <!-- Pcent -->
+
+    <Class rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Pcent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumPercent"/>
+    </Class>
+    
+
+
+    <!-- Retrieval -->
+
+    <Class rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Retrieval">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    </Class>
+    
+
+
+    <!-- Scolon -->
+
+    <Class rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Scolon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaAmpSemiColon"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#NumAmpHashSemiColon"/>
+    </Class>
+    
+
+
+    <!-- Severity -->
+
+    <Class rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Severity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </Class>
+    
+
+
+    <!-- Threat -->
+
+    <Class rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Threat">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </Class>
+    
+
+
+    <!-- Weakness -->
+
+    <Class rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Weakness">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </Class>
+    
+
+
+    <!-- Activity -->
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Activity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Class>
+    
+
+
+    <!-- ActivityInfluence -->
+
+    <Class rdf:about="http://www.w3.org/ns/prov#ActivityInfluence">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Influence"/>
+    </Class>
+    
+
+
+    <!-- Agent -->
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Agent">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Class>
+    
+
+
+    <!-- AgentInfluence -->
+
+    <Class rdf:about="http://www.w3.org/ns/prov#AgentInfluence">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Influence"/>
+    </Class>
+    
+
+
+    <!-- Association -->
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Association">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#AgentInfluence"/>
+    </Class>
+    
+
+
+    <!-- Attribution -->
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Attribution">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#AgentInfluence"/>
+    </Class>
+    
+
+
+    <!-- Bundle -->
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Bundle">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </Class>
+    
+
+
+    <!-- Collection -->
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Collection">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </Class>
+    
+
+
+    <!-- Communication -->
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Communication">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#ActivityInfluence"/>
+    </Class>
+    
+
+
+    <!-- Delegation -->
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Delegation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#AgentInfluence"/>
+    </Class>
+    
+
+
+    <!-- Derivation -->
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Derivation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#EntityInfluence"/>
+    </Class>
+    
+
+
+    <!-- EmptyCollection -->
+
+    <Class rdf:about="http://www.w3.org/ns/prov#EmptyCollection">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Collection"/>
+    </Class>
+    
+
+
+    <!-- End -->
+
+    <Class rdf:about="http://www.w3.org/ns/prov#End">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#EntityInfluence"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#InstantaneousEvent"/>
+    </Class>
+    
+
+
+    <!-- Entity -->
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Entity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Class>
+    
+
+
+    <!-- EntityInfluence -->
+
+    <Class rdf:about="http://www.w3.org/ns/prov#EntityInfluence">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Influence"/>
+    </Class>
+    
+
+
+    <!-- Generation -->
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Generation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#ActivityInfluence"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#InstantaneousEvent"/>
+    </Class>
+    
+
+
+    <!-- Influence -->
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Influence">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Class>
+    
+
+
+    <!-- InstantaneousEvent -->
+
+    <Class rdf:about="http://www.w3.org/ns/prov#InstantaneousEvent">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Class>
+    
+
+
+    <!-- Invalidation -->
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Invalidation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#ActivityInfluence"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#InstantaneousEvent"/>
+    </Class>
+    
+
+
+    <!-- Location -->
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Location">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Class>
+    
+
+
+    <!-- Organization -->
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Organization">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    </Class>
+    
+
+
+    <!-- Person -->
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Person">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    </Class>
+    
+
+
+    <!-- Plan -->
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Plan">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </Class>
+    
+
+
+    <!-- PrimarySource -->
+
+    <Class rdf:about="http://www.w3.org/ns/prov#PrimarySource">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Derivation"/>
+    </Class>
+    
+
+
+    <!-- Quotation -->
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Quotation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Derivation"/>
+    </Class>
+    
+
+
+    <!-- Revision -->
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Revision">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Derivation"/>
+    </Class>
+    
+
+
+    <!-- Role -->
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Role">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Class>
+    
+
+
+    <!-- SoftwareAgent -->
+
+    <Class rdf:about="http://www.w3.org/ns/prov#SoftwareAgent">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    </Class>
+    
+
+
+    <!-- Start -->
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Start">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#EntityInfluence"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#InstantaneousEvent"/>
+    </Class>
+    
+
+
+    <!-- Usage -->
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Usage">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#EntityInfluence"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#InstantaneousEvent"/>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- Alpha -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Alpha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaAmp"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaAmpSemiColon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNum"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHash"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHashSemiColon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumBackSlash"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumPercent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">B</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">F</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">M</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">V</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">W</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Y</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Z</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">b</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">c</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">d</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">f</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">g</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">h</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">j</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">k</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">l</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">m</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">q</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">r</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">s</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">t</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">u</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">v</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">w</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">y</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">z</untitled-ontology-19:hasCharacterValue>
+    </Thing>
+    
+
+
+    <!-- AlphaNumeric -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumeric">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNum"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHash"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHashSemiColon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumBackSlash"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumPercent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </Thing>
+    
+
+
+    <!-- Amper -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Amper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaAmp"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaAmpSemiColon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHash"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHashSemiColon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Amp"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#NumAmpHash"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#NumAmpHashSemiColon"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;</untitled-ontology-19:hasMaliciousRepresentations>
+    </Thing>
+    
+
+
+    <!-- Ampersand -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Ampersand">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaAmp"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaAmpSemiColon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHash"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHashSemiColon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Amp"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#NumAmpHash"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#NumAmpHashSemiColon"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;</untitled-ontology-19:hasMaliciousRepresentations>
+    </Thing>
+    
+
+
+    <!-- BackSlash -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#BackSlash">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumBackSlash"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#BckSlsh"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">\</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">\</untitled-ontology-19:hasMaliciousRepresentations>
+    </Thing>
+    
+
+
+    <!-- BackSlsh -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#BackSlsh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumBackSlash"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#BckSlsh"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">\</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">\</untitled-ontology-19:hasMaliciousRepresentations>
+    </Thing>
+    
+
+
+    <!-- Collabtive -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Collabtive">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Organization"/>
+        <untitled-ontology-19:hasAgentName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collabtive</untitled-ontology-19:hasAgentName>
+        <prov:influenced rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#CollabtiveInt"/>
+    </Thing>
+    
+
+
+    <!-- CollabtiveInt -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#CollabtiveInt">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <untitled-ontology-19:hasAgentName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collabtive Internal Team</untitled-ontology-19:hasAgentName>
+        <prov:actedOnBehalfOf rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Collabtive"/>
+        <prov:influenced rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#ProjectDesc"/>
+        <prov:influenced rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#ProjectDesc_C"/>
+        <prov:influenced rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#ProjectID"/>
+        <prov:influenced rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#ProjectID_C"/>
+        <prov:influenced rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#ProjectName"/>
+        <prov:influenced rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#ProjectName_C"/>
+        <prov:wasInfluencedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Collabtive"/>
+    </Thing>
+    
+
+
+    <!-- GT_AlphaAmp -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#GT_AlphaAmp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaAmp"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaAmpSemiColon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHash"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHashSemiColon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;GT</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;gt</untitled-ontology-19:hasMaliciousRepresentations>
+    </Thing>
+    
+
+
+    <!-- GT_AlphaAmpSemiColon -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#GT_AlphaAmpSemiColon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaAmpSemiColon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHashSemiColon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;GT;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;gt;</untitled-ontology-19:hasMaliciousRepresentations>
+    </Thing>
+    
+
+
+    <!-- GT_AlphaNumAmpHash -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#GT_AlphaNumAmpHash">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHash"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHashSemiColon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X000003E</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X000003e</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X00003E</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X00003e</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X0003E</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X0003e</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X003E</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X003e</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X03E</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X03e</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X3E</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X3e</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x000003E</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x000003e</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x00003E</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x00003e</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x0003E</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x0003e</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x003E</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x003e</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x03E</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x03e</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x3E</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x3e</untitled-ontology-19:hasMaliciousRepresentations>
+    </Thing>
+    
+
+
+    <!-- GT_AlphaNumAmpHashSemiColon -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#GT_AlphaNumAmpHashSemiColon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHashSemiColon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X000003E;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X000003e;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X00003E;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X00003e;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X0003E;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X0003e;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X003E;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X003e;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X03E;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X03e;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X3E;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X3e;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x000003E;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x000003e;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x00003E;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x00003e;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x0003E;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x0003e;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x003E;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x003e;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x03E;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x03e;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x3E;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x3e;</untitled-ontology-19:hasMaliciousRepresentations>
+    </Thing>
+    
+
+
+    <!-- GT_AlphaNumBackSlash -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#GT_AlphaNumBackSlash">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumBackSlash"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">\u003E</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">\u003e</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">\x3E</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">\x3e</untitled-ontology-19:hasMaliciousRepresentations>
+    </Thing>
+    
+
+
+    <!-- GT_AlphaNumPercent -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#GT_AlphaNumPercent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumPercent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">%3E</untitled-ontology-19:hasMaliciousRepresentations>
+    </Thing>
+    
+
+
+    <!-- GT_GreaterThan -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#GT_GreaterThan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#GrtThan"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&gt;</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&gt;</untitled-ontology-19:hasMaliciousRepresentations>
+    </Thing>
+    
+
+
+    <!-- GT_NumAmpHash -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#GT_NumAmpHash">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHash"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHashSemiColon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#NumAmpHash"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#NumAmpHashSemiColon"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#0000062</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#000062</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#00062</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#0062</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#062</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#62</untitled-ontology-19:hasMaliciousRepresentations>
+    </Thing>
+    
+
+
+    <!-- GT_NumAmpHashSemiColon -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#GT_NumAmpHashSemiColon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHashSemiColon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#NumAmpHashSemiColon"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#0000062;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#000062;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#00062;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#0062;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#062;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#62;</untitled-ontology-19:hasMaliciousRepresentations>
+    </Thing>
+    
+
+
+    <!-- GreaterThan -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#GreaterThan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#GrtThan"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&gt;</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&gt;</untitled-ontology-19:hasMaliciousRepresentations>
+    </Thing>
+    
+
+
+    <!-- Hash -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Hash">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHash"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHashSemiColon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Hsh"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#NumAmpHash"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#NumAmpHashSemiColon"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#</untitled-ontology-19:hasMaliciousRepresentations>
+    </Thing>
+    
+
+
+    <!-- HashRep -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#HashRep">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHash"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHashSemiColon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Hsh"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#NumAmpHash"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#NumAmpHashSemiColon"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#</untitled-ontology-19:hasMaliciousRepresentations>
+    </Thing>
+    
+
+
+    <!-- LT_AlphaAmp -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LT_AlphaAmp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaAmp"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaAmpSemiColon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHash"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHashSemiColon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;LT</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;lt</untitled-ontology-19:hasMaliciousRepresentations>
+    </Thing>
+    
+
+
+    <!-- LT_AlphaAmpSemiColon -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LT_AlphaAmpSemiColon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaAmpSemiColon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHashSemiColon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;LT;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;lt;</untitled-ontology-19:hasMaliciousRepresentations>
+    </Thing>
+    
+
+
+    <!-- LT_AlphaNumAmpHash -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LT_AlphaNumAmpHash">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHash"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHashSemiColon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X000003C</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X000003c</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X00003C</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X00003c</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X0003C</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X0003c</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X003C</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X003c</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X03C</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X03c</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X3C</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X3c</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x000003C</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x000003c</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x00003C</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x00003c</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x0003C</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x0003c</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x003C</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x003c</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x03C</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x03c</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x3C</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x3c</untitled-ontology-19:hasMaliciousRepresentations>
+    </Thing>
+    
+
+
+    <!-- LT_AlphaNumAmpHashSemiColon -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LT_AlphaNumAmpHashSemiColon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHashSemiColon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X000003C;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X000003c;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X00003C;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X00003c;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X0003C;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X0003c;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X003C;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X003c;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X03C;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X03c;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X3C;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#X3c;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x000003C;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x000003c;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x00003C;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x00003c;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x0003C;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x0003c;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x003C;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x003c;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x03C;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x03c;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x3C;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#x3c;</untitled-ontology-19:hasMaliciousRepresentations>
+    </Thing>
+    
+
+
+    <!-- LT_AlphaNumBackSlash -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LT_AlphaNumBackSlash">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumBackSlash"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">\u003C</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">\u003c</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">\x3C</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">\x3c</untitled-ontology-19:hasMaliciousRepresentations>
+    </Thing>
+    
+
+
+    <!-- LT_AlphaNumPercent -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LT_AlphaNumPercent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumPercent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">%3C</untitled-ontology-19:hasMaliciousRepresentations>
+    </Thing>
+    
+
+
+    <!-- LT_LessThan -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LT_LessThan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LesThan"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;</untitled-ontology-19:hasMaliciousRepresentations>
+    </Thing>
+    
+
+
+    <!-- LT_NumAmpHash -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LT_NumAmpHash">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHash"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHashSemiColon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#NumAmpHash"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#NumAmpHashSemiColon"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#0000060</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#000060</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#00060</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#0060</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#060</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#60</untitled-ontology-19:hasMaliciousRepresentations>
+    </Thing>
+    
+
+
+    <!-- LT_NumAmpHashSemiColon -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LT_NumAmpHashSemiColon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHashSemiColon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#NumAmpHashSemiColon"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#0000060;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#000060;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#00060;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#0060;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#060;</untitled-ontology-19:hasMaliciousRepresentations>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;#60;</untitled-ontology-19:hasMaliciousRepresentations>
+    </Thing>
+    
+
+
+    <!-- LessThan -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LessThan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LesThan"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;</untitled-ontology-19:hasMaliciousRepresentations>
+    </Thing>
+    
+
+
+    <!-- LikCapec198 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LikCapec198">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Likelihood"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </Thing>
+    
+
+
+    <!-- LikCapec199 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LikCapec199">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Likelihood"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasLikelihood rdf:datatype="http://www.w3.org/2001/XMLSchema#string">High</untitled-ontology-19:hasLikelihood>
+    </Thing>
+    
+
+
+    <!-- LikCapec245 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LikCapec245">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Likelihood"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </Thing>
+    
+
+
+    <!-- LikCapec246 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LikCapec246">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Likelihood"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </Thing>
+    
+
+
+    <!-- LikCapec247 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LikCapec247">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Likelihood"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </Thing>
+    
+
+
+    <!-- LikCwe80 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LikCwe80">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Likelihood"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasLikelihood rdf:datatype="http://www.w3.org/2001/XMLSchema#string">High to Very High</untitled-ontology-19:hasLikelihood>
+    </Thing>
+    
+
+
+    <!-- LikCwe81 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LikCwe81">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Likelihood"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </Thing>
+    
+
+
+    <!-- LikCwe83 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LikCwe83">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Likelihood"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </Thing>
+    
+
+
+    <!-- LikCwe84 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LikCwe84">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Likelihood"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </Thing>
+    
+
+
+    <!-- LikCwe85 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LikCwe85">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Likelihood"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </Thing>
+    
+
+
+    <!-- LikCwe86 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LikCwe86">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Likelihood"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </Thing>
+    
+
+
+    <!-- LikCwe87 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LikCwe87">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Likelihood"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </Thing>
+    
+
+
+    <!-- MYTESTCAPEC198 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCAPEC198">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Threat"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:exploits rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCWE81"/>
+        <untitled-ontology-19:hasEntityDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attacker distributes a link (or possibly some other query structure) with a request to a third party web server that is malformed and also contains a block of exploit code in order to have the exploit become live code in the resulting error page. When the third party web server receives the crafted request and notes the error it then creates an error message that echoes the malformed message, including the exploit. Doing this converts the exploit portion of the message into to valid language elements that are executed by the viewing browser. When a victim executes the query provided by the attacker the infected error message error message is returned including the exploit code which then runs in the victim&apos;s browser. XSS can result in execution of code as well as data leakage (e.g. session cookies can be sent to the attacker). This type of attack is especially dangerous since the exploit appears to come from the third party web server, who the victim may trust and hence be more vulnerable to deception.</untitled-ontology-19:hasEntityDescription>
+        <untitled-ontology-19:hasEntityID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAPEC198</untitled-ontology-19:hasEntityID>
+        <untitled-ontology-19:hasEntityName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cross-Site Scripting in Error Pages</untitled-ontology-19:hasEntityName>
+        <untitled-ontology-19:isFormalizedAs rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MyTestPat198"/>
+        <untitled-ontology-19:isLabelledWithThreatLikelihood rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LikCapec198"/>
+        <untitled-ontology-19:isLabelledWithThreatSeverity rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#SevCapec198"/>
+        <prov:wasGeneratedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCapec198"/>
+        <prov:wasInfluencedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCapec198"/>
+    </Thing>
+    
+
+
+    <!-- MYTESTCAPEC199 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCAPEC199">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Threat"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:exploits rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCWE85"/>
+        <untitled-ontology-19:exploits rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCWE86"/>
+        <untitled-ontology-19:exploits rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCWE87"/>
+        <untitled-ontology-19:hasEntityDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The attacker uses alternate forms of keywords or commands that result in the same action as the primary form but which may not be caught by filters. For example, many keywords are processed in a case insensitive manner. If the site&apos;s web filtering algorithm does not convert all tags into a consistent case before the comparison with forbidden keywords it is possible to bypass filters (e.g., incomplete black lists) by using an alternate case structure. For example, the &quot;script&quot; tag using the alternate forms of &quot;Script&quot; or &quot;ScRiPt&quot; may bypass filters where &quot;script&quot; is the only form tested. Other variants using different syntax representations are also possible as well as using pollution meta-characters or entities that are eventually ignored by the rendering engine. The attack can result in the execution of otherwise prohibited functionality.</untitled-ontology-19:hasEntityDescription>
+        <untitled-ontology-19:hasEntityID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAPEC199</untitled-ontology-19:hasEntityID>
+        <untitled-ontology-19:hasEntityName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cross-Site Scripting Using Alternate Syntax</untitled-ontology-19:hasEntityName>
+        <untitled-ontology-19:isFormalizedAs rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MyTestPat199"/>
+        <untitled-ontology-19:isLabelledWithThreatLikelihood rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LikCapec199"/>
+        <untitled-ontology-19:isLabelledWithThreatSeverity rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#SevCapec199"/>
+        <prov:wasGeneratedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCapec199"/>
+        <prov:wasInfluencedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCapec199"/>
+    </Thing>
+    
+
+
+    <!-- MYTESTCAPEC245 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCAPEC245">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Threat"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:exploits rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCWE85"/>
+        <untitled-ontology-19:hasEntityDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The attacker bypasses input validation by using doubled characters in order to perform a cross-site scripting attack. Some filters fail to recognize dangerous sequences if they are preceded by repeated characters. For example, by doubling the </untitled-ontology-19:hasEntityDescription>
+        <untitled-ontology-19:hasEntityID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAPEC245</untitled-ontology-19:hasEntityID>
+        <untitled-ontology-19:hasEntityName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cross-Site Scripting Using Doubled Characters, e.g. %3C%3Cscript</untitled-ontology-19:hasEntityName>
+        <untitled-ontology-19:isFormalizedAs rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MyTestPat245"/>
+        <untitled-ontology-19:isLabelledWithThreatLikelihood rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LikCapec245"/>
+        <untitled-ontology-19:isLabelledWithThreatSeverity rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#SevCapec245"/>
+        <prov:wasGeneratedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCapec245"/>
+        <prov:wasInfluencedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCapec245"/>
+    </Thing>
+    
+
+
+    <!-- MYTESTCAPEC246 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCAPEC246">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Threat"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasEntityDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An attacker injects malicious script to global parameters in a Flash movie via a crafted URL. The malicious script is executed in the context of the Flash movie. As such, this is a form of Cross-Site Scripting (XSS), but the abilities granted to the Flash movie make this attack more flexible.</untitled-ontology-19:hasEntityDescription>
+        <untitled-ontology-19:hasEntityID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAPEC246</untitled-ontology-19:hasEntityID>
+        <untitled-ontology-19:hasEntityName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cross-Site Scripting Using Flash</untitled-ontology-19:hasEntityName>
+        <untitled-ontology-19:isFormalizedAs rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MyTestPat246"/>
+        <untitled-ontology-19:isLabelledWithThreatLikelihood rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LikCapec246"/>
+        <untitled-ontology-19:isLabelledWithThreatSeverity rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#SevCapec246"/>
+        <prov:wasGeneratedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCapec246"/>
+        <prov:wasInfluencedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCapec246"/>
+    </Thing>
+    
+
+
+    <!-- MYTESTCAPEC247 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCAPEC247">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Threat"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:exploits rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCWE86"/>
+        <untitled-ontology-19:hasEntityDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The attacker inserts invalid characters in identifiers to bypass application filtering of input. Filters may not scan beyond invalid characters but during later stages of processing content that follows these invalid characters may still be processed. This allows the attacker to sneak prohibited commands past filters and perform normally prohibited operations. Invalid characters may include null, carriage return, line feed or tab in an identifier. Successful bypassing of the filter can result in a XSS attack, resulting in the disclosure of web cookies or possibly other results.</untitled-ontology-19:hasEntityDescription>
+        <untitled-ontology-19:hasEntityID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAPEC247</untitled-ontology-19:hasEntityID>
+        <untitled-ontology-19:hasEntityName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cross-Site Scripting with Masking through Invalid Characters in Identifiers</untitled-ontology-19:hasEntityName>
+        <untitled-ontology-19:isFormalizedAs rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MyTestPat247"/>
+        <untitled-ontology-19:isLabelledWithThreatLikelihood rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LikCapec247"/>
+        <untitled-ontology-19:isLabelledWithThreatSeverity rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#SevCapec247"/>
+        <prov:wasGeneratedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCapec247"/>
+        <prov:wasInfluencedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCapec247"/>
+    </Thing>
+    
+
+
+    <!-- MYTESTCWE80 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCWE80">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Weakness"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasEntityDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The software receives input from an upstream component, but it
+					does not neutralize or incorrectly neutralizes special characters such as</untitled-ontology-19:hasEntityDescription>
+        <untitled-ontology-19:hasEntityID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CWE80</untitled-ontology-19:hasEntityID>
+        <untitled-ontology-19:hasEntityName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS)</untitled-ontology-19:hasEntityName>
+        <untitled-ontology-19:isLabelledWithWeaknessLikelihood rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LikCwe80"/>
+        <prov:wasGeneratedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCwe80"/>
+        <prov:wasInfluencedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCwe80"/>
+    </Thing>
+    
+
+
+    <!-- MYTESTCWE81 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCWE81">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Weakness"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasEntityDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The software receives input from an upstream component, but it
+					does not neutralize or incorrectly neutralizes special characters that could be</untitled-ontology-19:hasEntityDescription>
+        <untitled-ontology-19:hasEntityID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CWE81</untitled-ontology-19:hasEntityID>
+        <untitled-ontology-19:hasEntityName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Improper Neutralization of Script in an Error Message Web Page</untitled-ontology-19:hasEntityName>
+        <untitled-ontology-19:isExploitedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCAPEC198"/>
+        <untitled-ontology-19:isLabelledWithWeaknessLikelihood rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LikCwe81"/>
+        <prov:wasGeneratedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCwe81"/>
+        <prov:wasInfluencedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCwe81"/>
+    </Thing>
+    
+
+
+    <!-- MYTESTCWE83 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCWE83">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Weakness"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasEntityDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The software does not neutralize or incorrectly neutralizes
+					&quot;javascript:&quot; or other URIs from dangerous attributes within tags, such as</untitled-ontology-19:hasEntityDescription>
+        <untitled-ontology-19:hasEntityID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CWE83</untitled-ontology-19:hasEntityID>
+        <untitled-ontology-19:hasEntityName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Improper Neutralization of Script in Attributes in a Web Page</untitled-ontology-19:hasEntityName>
+        <untitled-ontology-19:isLabelledWithWeaknessLikelihood rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LikCwe83"/>
+        <prov:wasGeneratedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCwe83"/>
+        <prov:wasInfluencedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCwe83"/>
+    </Thing>
+    
+
+
+    <!-- MYTESTCWE84 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCWE84">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Weakness"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasEntityDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The web application improperly neutralizes user-controlled
+					input for executable script disguised with URI encodings.</untitled-ontology-19:hasEntityDescription>
+        <untitled-ontology-19:hasEntityID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CWE84</untitled-ontology-19:hasEntityID>
+        <untitled-ontology-19:hasEntityName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Improper Neutralization of Encoded URI Schemes in a Web Page</untitled-ontology-19:hasEntityName>
+        <untitled-ontology-19:isLabelledWithWeaknessLikelihood rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LikCwe84"/>
+        <prov:wasGeneratedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCwe84"/>
+        <prov:wasInfluencedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCwe84"/>
+    </Thing>
+    
+
+
+    <!-- MYTESTCWE85 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCWE85">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Weakness"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasEntityDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The web application does not filter user-controlled input for
+					executable script disguised using doubling of the involved</untitled-ontology-19:hasEntityDescription>
+        <untitled-ontology-19:hasEntityID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CWE85</untitled-ontology-19:hasEntityID>
+        <untitled-ontology-19:hasEntityName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doubled Character XSS Manipulations</untitled-ontology-19:hasEntityName>
+        <untitled-ontology-19:isExploitedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCAPEC199"/>
+        <untitled-ontology-19:isExploitedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCAPEC245"/>
+        <untitled-ontology-19:isLabelledWithWeaknessLikelihood rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LikCwe85"/>
+        <prov:wasGeneratedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCwe85"/>
+        <prov:wasInfluencedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCwe85"/>
+    </Thing>
+    
+
+
+    <!-- MYTESTCWE86 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCWE86">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Weakness"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasEntityDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The software does not neutralize or incorrectly neutralizes
+					invalid characters or byte sequences in the middle of tag names, URI schemes,</untitled-ontology-19:hasEntityDescription>
+        <untitled-ontology-19:hasEntityID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CWE86</untitled-ontology-19:hasEntityID>
+        <untitled-ontology-19:hasEntityName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Improper Neutralization of Invalid Characters in Identifiers in Web Pages</untitled-ontology-19:hasEntityName>
+        <untitled-ontology-19:isExploitedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCAPEC199"/>
+        <untitled-ontology-19:isExploitedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCAPEC247"/>
+        <untitled-ontology-19:isLabelledWithWeaknessLikelihood rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LikCwe86"/>
+        <prov:wasGeneratedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCwe86"/>
+        <prov:wasInfluencedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCwe86"/>
+    </Thing>
+    
+
+
+    <!-- MYTESTCWE87 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCWE87">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Weakness"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasEntityDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The software does not neutralize or incorrectly neutralizes
+					user-controlled input for alternate script syntax.</untitled-ontology-19:hasEntityDescription>
+        <untitled-ontology-19:hasEntityID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CWE87</untitled-ontology-19:hasEntityID>
+        <untitled-ontology-19:hasEntityName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Improper Neutralization of Alternate XSS Syntax</untitled-ontology-19:hasEntityName>
+        <untitled-ontology-19:isExploitedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCAPEC199"/>
+        <untitled-ontology-19:isLabelledWithWeaknessLikelihood rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LikCwe87"/>
+        <prov:wasGeneratedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCwe87"/>
+        <prov:wasInfluencedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCwe87"/>
+    </Thing>
+    
+
+
+    <!-- MyTestPat198 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MyTestPat198">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Pattern"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasEntityDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[LT{1,2}]][[((?i)s){1,1}]][[(SCRIPT){1,1}]]</untitled-ontology-19:hasEntityDescription>
+        <untitled-ontology-19:hasEntityID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pat198</untitled-ontology-19:hasEntityID>
+        <untitled-ontology-19:hasEntityName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pattern for 198</untitled-ontology-19:hasEntityName>
+        <untitled-ontology-19:represents rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCAPEC198"/>
+    </Thing>
+    
+
+
+    <!-- MyTestPat199 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MyTestPat199">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Pattern"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasEntityDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[LT{1,2}]][[((?i)s){1,1}]][[(SCRIPT){1,1}]]</untitled-ontology-19:hasEntityDescription>
+        <untitled-ontology-19:hasEntityID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pat199</untitled-ontology-19:hasEntityID>
+        <untitled-ontology-19:hasEntityName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pattern for 199</untitled-ontology-19:hasEntityName>
+        <untitled-ontology-19:represents rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCAPEC199"/>
+    </Thing>
+    
+
+
+    <!-- MyTestPat245 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MyTestPat245">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Pattern"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasEntityDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[LT{1,2}]][[((?i)s){1,1}]][[(SCRIPT){1,1}]]</untitled-ontology-19:hasEntityDescription>
+        <untitled-ontology-19:hasEntityID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pat245</untitled-ontology-19:hasEntityID>
+        <untitled-ontology-19:hasEntityName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pattern for 245</untitled-ontology-19:hasEntityName>
+        <untitled-ontology-19:represents rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCAPEC245"/>
+    </Thing>
+    
+
+
+    <!-- MyTestPat246 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MyTestPat246">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Pattern"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasEntityDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[LT{1,2}]][[((?i)s){1,1}]][[(SCRIPT){1,1}]]</untitled-ontology-19:hasEntityDescription>
+        <untitled-ontology-19:hasEntityID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pat246</untitled-ontology-19:hasEntityID>
+        <untitled-ontology-19:hasEntityName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pattern for 246</untitled-ontology-19:hasEntityName>
+        <untitled-ontology-19:represents rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCAPEC246"/>
+    </Thing>
+    
+
+
+    <!-- MyTestPat247 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MyTestPat247">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Pattern"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasEntityDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[[LT{1,2}]][[((?i)s){1,1}]][[(SCRIPT){1,1}]]</untitled-ontology-19:hasEntityDescription>
+        <untitled-ontology-19:hasEntityID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pat247</untitled-ontology-19:hasEntityID>
+        <untitled-ontology-19:hasEntityName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pattern for 247</untitled-ontology-19:hasEntityName>
+        <untitled-ontology-19:represents rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCAPEC247"/>
+    </Thing>
+    
+
+
+    <!-- Numeric -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Numeric">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNum"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHash"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHashSemiColon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumBackSlash"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumPercent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#NumAmpHash"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#NumAmpHashSemiColon"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9</untitled-ontology-19:hasCharacterValue>
+    </Thing>
+    
+
+
+    <!-- Percent -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Percent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumPercent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Pcent"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">%</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">%</untitled-ontology-19:hasMaliciousRepresentations>
+    </Thing>
+    
+
+
+    <!-- PercentRep -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#PercentRep">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumPercent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Pcent"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">%</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">%</untitled-ontology-19:hasMaliciousRepresentations>
+    </Thing>
+    
+
+
+    <!-- ProjectDesc -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#ProjectDesc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Asset"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasAllowedAssetCharSet rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#GT_AlphaNumAmpHashSemiColon"/>
+        <untitled-ontology-19:hasAllowedAssetCharSet rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#GT_GreaterThan"/>
+        <untitled-ontology-19:hasAllowedAssetCharSet rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#GreaterThan"/>
+        <untitled-ontology-19:hasAllowedAssetCharSet rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LT_AlphaNumAmpHashSemiColon"/>
+        <untitled-ontology-19:hasAllowedAssetCharSet rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LT_LessThan"/>
+        <untitled-ontology-19:hasAllowedAssetCharSet rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#LessThan"/>
+        <untitled-ontology-19:hasAssetLength rdf:datatype="http://www.w3.org/2001/XMLSchema#int">255</untitled-ontology-19:hasAssetLength>
+        <untitled-ontology-19:hasAssetType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">String</untitled-ontology-19:hasAssetType>
+        <untitled-ontology-19:hasEntityID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ProjectDesc</untitled-ontology-19:hasEntityID>
+        <untitled-ontology-19:hasEntityName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ProjectDesc</untitled-ontology-19:hasEntityName>
+        <prov:wasAttributedTo rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#CollabtiveInt"/>
+        <prov:wasGeneratedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#ProjectDesc_C"/>
+        <prov:wasInfluencedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#CollabtiveInt"/>
+        <prov:wasInfluencedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#ProjectDesc_C"/>
+    </Thing>
+    
+
+
+    <!-- ProjectDesc_C -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#ProjectDesc_C">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Creation"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <untitled-ontology-19:hasActivitySummary rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></untitled-ontology-19:hasActivitySummary>
+        <untitled-ontology-19:hasCreationTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-11-06 12:00:00</untitled-ontology-19:hasCreationTimeStamp>
+        <prov:generated rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#ProjectDesc"/>
+        <prov:influenced rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#ProjectDesc"/>
+        <prov:wasAssociatedWith rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#CollabtiveInt"/>
+        <prov:wasInfluencedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#CollabtiveInt"/>
+    </Thing>
+    
+
+
+    <!-- ProjectID -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#ProjectID">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Asset"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasAllowedAssetCharSet rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Numeric"/>
+        <untitled-ontology-19:hasAssetLength rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</untitled-ontology-19:hasAssetLength>
+        <untitled-ontology-19:hasAssetType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">String</untitled-ontology-19:hasAssetType>
+        <untitled-ontology-19:hasEntityID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ProjectID</untitled-ontology-19:hasEntityID>
+        <untitled-ontology-19:hasEntityName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ProjectID</untitled-ontology-19:hasEntityName>
+        <prov:wasAttributedTo rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#CollabtiveInt"/>
+        <prov:wasGeneratedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#ProjectID_C"/>
+        <prov:wasInfluencedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#CollabtiveInt"/>
+        <prov:wasInfluencedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#ProjectID_C"/>
+    </Thing>
+    
+
+
+    <!-- ProjectID_C -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#ProjectID_C">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Creation"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <untitled-ontology-19:hasActivitySummary rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></untitled-ontology-19:hasActivitySummary>
+        <untitled-ontology-19:hasCreationTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-11-06 12:00:00</untitled-ontology-19:hasCreationTimeStamp>
+        <prov:generated rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#ProjectID"/>
+        <prov:influenced rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#ProjectID"/>
+        <prov:wasAssociatedWith rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#CollabtiveInt"/>
+        <prov:wasInfluencedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#CollabtiveInt"/>
+    </Thing>
+    
+
+
+    <!-- ProjectName -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#ProjectName">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Asset"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasAllowedAssetCharSet rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumeric"/>
+        <untitled-ontology-19:hasAssetLength rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</untitled-ontology-19:hasAssetLength>
+        <untitled-ontology-19:hasAssetType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">String</untitled-ontology-19:hasAssetType>
+        <untitled-ontology-19:hasEntityID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ProjectName</untitled-ontology-19:hasEntityID>
+        <untitled-ontology-19:hasEntityName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ProjectName</untitled-ontology-19:hasEntityName>
+        <prov:wasAttributedTo rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#CollabtiveInt"/>
+        <prov:wasGeneratedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#ProjectName_C"/>
+        <prov:wasInfluencedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#CollabtiveInt"/>
+        <prov:wasInfluencedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#ProjectName_C"/>
+    </Thing>
+    
+
+
+    <!-- ProjectName_C -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#ProjectName_C">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Creation"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <untitled-ontology-19:hasActivitySummary rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></untitled-ontology-19:hasActivitySummary>
+        <untitled-ontology-19:hasCreationTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-11-06 12:10:00</untitled-ontology-19:hasCreationTimeStamp>
+        <prov:generated rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#ProjectName"/>
+        <prov:influenced rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#ProjectName"/>
+        <prov:wasAssociatedWith rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#CollabtiveInt"/>
+        <prov:wasInfluencedBy rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#CollabtiveInt"/>
+    </Thing>
+    
+
+
+    <!-- RetCapec198 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCapec198">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Modification"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Retrieval"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <untitled-ontology-19:hasActivitySource rdf:resource="http://www.w3.org/ns/prov#Internal_CAPEC_Team"/>
+        <untitled-ontology-19:hasModificationTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-06-23</untitled-ontology-19:hasModificationTimeStamp>
+        <untitled-ontology-19:hasRetrievalTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-05-25 04:16:55.346</untitled-ontology-19:hasRetrievalTimeStamp>
+        <untitled-ontology-19:wasAssociatedWith rdf:resource="http://www.w3.org/ns/prov#CAPECContentTeam"/>
+        <prov:generated rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCAPEC198"/>
+        <prov:influenced rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCAPEC198"/>
+    </Thing>
+    
+
+
+    <!-- RetCapec199 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCapec199">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Modification"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Retrieval"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <untitled-ontology-19:hasActivitySource rdf:resource="http://www.w3.org/ns/prov#Internal_CAPEC_Team"/>
+        <untitled-ontology-19:hasModificationTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-06-23</untitled-ontology-19:hasModificationTimeStamp>
+        <untitled-ontology-19:hasRetrievalTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-05-25 04:16:55.358</untitled-ontology-19:hasRetrievalTimeStamp>
+        <untitled-ontology-19:wasAssociatedWith rdf:resource="http://www.w3.org/ns/prov#CAPECContentTeam"/>
+        <prov:generated rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCAPEC199"/>
+        <prov:influenced rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCAPEC199"/>
+    </Thing>
+    
+
+
+    <!-- RetCapec245 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCapec245">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Modification"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Retrieval"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <untitled-ontology-19:hasActivitySource rdf:resource="http://www.w3.org/ns/prov#Internal_CAPEC_Team"/>
+        <untitled-ontology-19:hasModificationTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-06-23</untitled-ontology-19:hasModificationTimeStamp>
+        <untitled-ontology-19:hasRetrievalTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-05-25 04:16:55.359</untitled-ontology-19:hasRetrievalTimeStamp>
+        <untitled-ontology-19:wasAssociatedWith rdf:resource="http://www.w3.org/ns/prov#CAPECContentTeam"/>
+        <prov:generated rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCAPEC245"/>
+        <prov:influenced rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCAPEC245"/>
+    </Thing>
+    
+
+
+    <!-- RetCapec246 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCapec246">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Modification"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Retrieval"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <untitled-ontology-19:hasActivitySource rdf:resource="http://www.w3.org/ns/prov#Internal_CAPEC_Team"/>
+        <untitled-ontology-19:hasModificationTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-06-23</untitled-ontology-19:hasModificationTimeStamp>
+        <untitled-ontology-19:hasRetrievalTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-05-25 04:16:55.361</untitled-ontology-19:hasRetrievalTimeStamp>
+        <untitled-ontology-19:wasAssociatedWith rdf:resource="http://www.w3.org/ns/prov#CAPECContentTeam"/>
+        <prov:generated rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCAPEC246"/>
+        <prov:influenced rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCAPEC246"/>
+    </Thing>
+    
+
+
+    <!-- RetCapec247 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCapec247">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Modification"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Retrieval"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <untitled-ontology-19:hasActivitySource rdf:resource="http://www.w3.org/ns/prov#Internal_CAPEC_Team"/>
+        <untitled-ontology-19:hasModificationTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-06-23</untitled-ontology-19:hasModificationTimeStamp>
+        <untitled-ontology-19:hasRetrievalTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-05-25 04:16:55.363</untitled-ontology-19:hasRetrievalTimeStamp>
+        <untitled-ontology-19:wasAssociatedWith rdf:resource="http://www.w3.org/ns/prov#CAPECContentTeam"/>
+        <prov:generated rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCAPEC247"/>
+        <prov:influenced rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCAPEC247"/>
+    </Thing>
+    
+
+
+    <!-- RetCwe80 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCwe80">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Modification"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Retrieval"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <untitled-ontology-19:hasActivitySource rdf:resource="http://www.w3.org/ns/prov#Internal"/>
+        <untitled-ontology-19:hasModificationTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-07-30</untitled-ontology-19:hasModificationTimeStamp>
+        <untitled-ontology-19:hasRetrievalTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-05-25 04:16:55.85</untitled-ontology-19:hasRetrievalTimeStamp>
+        <untitled-ontology-19:wasAssociatedWith rdf:resource="http://www.w3.org/ns/prov#CWEContentTeam"/>
+        <prov:generated rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCWE80"/>
+        <prov:influenced rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCWE80"/>
+    </Thing>
+    
+
+
+    <!-- RetCwe81 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCwe81">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Modification"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Retrieval"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <untitled-ontology-19:hasActivitySource rdf:resource="http://www.w3.org/ns/prov#Internal"/>
+        <untitled-ontology-19:hasModificationTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-07-30</untitled-ontology-19:hasModificationTimeStamp>
+        <untitled-ontology-19:hasRetrievalTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-05-25 04:16:55.858</untitled-ontology-19:hasRetrievalTimeStamp>
+        <untitled-ontology-19:wasAssociatedWith rdf:resource="http://www.w3.org/ns/prov#CWEContentTeam"/>
+        <prov:generated rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCWE81"/>
+        <prov:influenced rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCWE81"/>
+    </Thing>
+    
+
+
+    <!-- RetCwe83 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCwe83">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Modification"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Retrieval"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <untitled-ontology-19:hasActivitySource rdf:resource="http://www.w3.org/ns/prov#Internal"/>
+        <untitled-ontology-19:hasModificationTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-07-30</untitled-ontology-19:hasModificationTimeStamp>
+        <untitled-ontology-19:hasRetrievalTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-05-25 04:16:55.865</untitled-ontology-19:hasRetrievalTimeStamp>
+        <untitled-ontology-19:hasRetrievalTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-05-25 04:16:55.869</untitled-ontology-19:hasRetrievalTimeStamp>
+        <untitled-ontology-19:wasAssociatedWith rdf:resource="http://www.w3.org/ns/prov#CWEContentTeam"/>
+        <prov:generated rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCWE83"/>
+        <prov:influenced rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCWE83"/>
+    </Thing>
+    
+
+
+    <!-- RetCwe84 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCwe84">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Modification"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Retrieval"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <untitled-ontology-19:hasActivitySource rdf:resource="http://www.w3.org/ns/prov#Internal"/>
+        <untitled-ontology-19:hasModificationTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-07-30</untitled-ontology-19:hasModificationTimeStamp>
+        <untitled-ontology-19:hasRetrievalTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-05-25 04:16:55.873</untitled-ontology-19:hasRetrievalTimeStamp>
+        <untitled-ontology-19:wasAssociatedWith rdf:resource="http://www.w3.org/ns/prov#CWEContentTeam"/>
+        <prov:generated rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCWE84"/>
+        <prov:influenced rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCWE84"/>
+    </Thing>
+    
+
+
+    <!-- RetCwe85 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCwe85">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Modification"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Retrieval"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <untitled-ontology-19:hasActivitySource rdf:resource="http://www.w3.org/ns/prov#Internal"/>
+        <untitled-ontology-19:hasModificationTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-07-30</untitled-ontology-19:hasModificationTimeStamp>
+        <untitled-ontology-19:hasRetrievalTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-05-25 04:16:55.879</untitled-ontology-19:hasRetrievalTimeStamp>
+        <untitled-ontology-19:hasRetrievalTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-05-25 04:16:55.897</untitled-ontology-19:hasRetrievalTimeStamp>
+        <untitled-ontology-19:wasAssociatedWith rdf:resource="http://www.w3.org/ns/prov#CWEContentTeam"/>
+        <prov:generated rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCWE85"/>
+        <prov:influenced rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCWE85"/>
+    </Thing>
+    
+
+
+    <!-- RetCwe86 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCwe86">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Modification"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Retrieval"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <untitled-ontology-19:hasActivitySource rdf:resource="http://www.w3.org/ns/prov#Internal"/>
+        <untitled-ontology-19:hasModificationTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-07-30</untitled-ontology-19:hasModificationTimeStamp>
+        <untitled-ontology-19:hasRetrievalTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-05-25 04:16:55.903</untitled-ontology-19:hasRetrievalTimeStamp>
+        <untitled-ontology-19:wasAssociatedWith rdf:resource="http://www.w3.org/ns/prov#CWEContentTeam"/>
+        <prov:generated rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCWE86"/>
+        <prov:influenced rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCWE86"/>
+    </Thing>
+    
+
+
+    <!-- RetCwe87 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#RetCwe87">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Modification"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Retrieval"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <untitled-ontology-19:hasActivitySource rdf:resource="http://www.w3.org/ns/prov#Internal"/>
+        <untitled-ontology-19:hasModificationTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-07-30</untitled-ontology-19:hasModificationTimeStamp>
+        <untitled-ontology-19:hasRetrievalTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-05-25 04:16:55.906</untitled-ontology-19:hasRetrievalTimeStamp>
+        <untitled-ontology-19:hasRetrievalTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-05-25 04:16:55.91</untitled-ontology-19:hasRetrievalTimeStamp>
+        <untitled-ontology-19:wasAssociatedWith rdf:resource="http://www.w3.org/ns/prov#CWEContentTeam"/>
+        <prov:generated rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCWE87"/>
+        <prov:influenced rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#MYTESTCWE87"/>
+    </Thing>
+    
+
+
+    <!-- SemiCln -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#SemiCln">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaAmpSemiColon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHashSemiColon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#NumAmpHashSemiColon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Scolon"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">;</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">;</untitled-ontology-19:hasMaliciousRepresentations>
+    </Thing>
+    
+
+
+    <!-- SemiColon -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#SemiColon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaAmpSemiColon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#AlphaNumAmpHashSemiColon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Characters"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#NumAmpHashSemiColon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Scolon"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasCharacterValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">;</untitled-ontology-19:hasCharacterValue>
+        <untitled-ontology-19:hasMaliciousRepresentations rdf:datatype="http://www.w3.org/2001/XMLSchema#string">;</untitled-ontology-19:hasMaliciousRepresentations>
+    </Thing>
+    
+
+
+    <!-- SevCapec198 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#SevCapec198">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Severity"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasSeverity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medium</untitled-ontology-19:hasSeverity>
+    </Thing>
+    
+
+
+    <!-- SevCapec199 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#SevCapec199">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Severity"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasSeverity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">High</untitled-ontology-19:hasSeverity>
+    </Thing>
+    
+
+
+    <!-- SevCapec245 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#SevCapec245">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Severity"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasSeverity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medium</untitled-ontology-19:hasSeverity>
+    </Thing>
+    
+
+
+    <!-- SevCapec246 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#SevCapec246">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Severity"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </Thing>
+    
+
+
+    <!-- SevCapec247 -->
+
+    <Thing rdf:about="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#SevCapec247">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bhanukiran/ontologies/2015/10/untitled-ontology-19#Severity"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <untitled-ontology-19:hasSeverity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medium</untitled-ontology-19:hasSeverity>
+    </Thing>
+    
+
+
+    <!-- prov-o -->
+
+    <Thing rdf:about="http://www.w3.org/ns/prov-o">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </Thing>
+    
+
+
+    <!-- prov-o-20120312 -->
+
+    <Thing rdf:about="http://www.w3.org/ns/prov-o-20120312">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <prov:influenced rdf:resource="http://www.w3.org/ns/prov-o#"/>
+    </Thing>
+    
+
+
+    <!-- CAPECContentTeam -->
+
+    <Thing rdf:about="http://www.w3.org/ns/prov#CAPECContentTeam">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <untitled-ontology-19:hasAgentName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAPEC Content Team</untitled-ontology-19:hasAgentName>
+        <prov:actedOnBehalfOf rdf:resource="http://www.w3.org/ns/prov#TheMITRECorporation"/>
+        <prov:wasInfluencedBy rdf:resource="http://www.w3.org/ns/prov#TheMITRECorporation"/>
+    </Thing>
+    
+
+
+    <!-- CWEContentTeam -->
+
+    <Thing rdf:about="http://www.w3.org/ns/prov#CWEContentTeam">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <untitled-ontology-19:hasAgentName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CWE Content Team</untitled-ontology-19:hasAgentName>
+        <prov:actedOnBehalfOf rdf:resource="http://www.w3.org/ns/prov#MITRE"/>
+        <prov:wasInfluencedBy rdf:resource="http://www.w3.org/ns/prov#MITRE"/>
+    </Thing>
+    
+
+
+    <!-- EmptyCollection -->
+
+    <Thing rdf:about="http://www.w3.org/ns/prov#EmptyCollection">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </Thing>
+    
+
+
+    <!-- Internal -->
+
+    <Thing rdf:about="http://www.w3.org/ns/prov#Internal">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <untitled-ontology-19:hasAgentName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Internal</untitled-ontology-19:hasAgentName>
+    </Thing>
+    
+
+
+    <!-- Internal_CAPEC_Team -->
+
+    <Thing rdf:about="http://www.w3.org/ns/prov#Internal_CAPEC_Team">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <untitled-ontology-19:hasAgentName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Internal_CAPEC_Team</untitled-ontology-19:hasAgentName>
+    </Thing>
+    
+
+
+    <!-- MITRE -->
+
+    <Thing rdf:about="http://www.w3.org/ns/prov#MITRE">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Organization"/>
+        <untitled-ontology-19:hasAgentName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MITRE</untitled-ontology-19:hasAgentName>
+        <prov:influenced rdf:resource="http://www.w3.org/ns/prov#CWEContentTeam"/>
+    </Thing>
+    
+
+
+    <!-- TheMITRECorporation -->
+
+    <Thing rdf:about="http://www.w3.org/ns/prov#TheMITRECorporation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Organization"/>
+        <untitled-ontology-19:hasAgentName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The MITRE Corporation</untitled-ontology-19:hasAgentName>
+        <prov:influenced rdf:resource="http://www.w3.org/ns/prov#CAPECContentTeam"/>
+    </Thing>
+    
+
+
+    <!-- prov-o# -->
+
+    <Thing rdf:about="http://www.w3.org/ns/prov-o#">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <prov:alternateOf rdf:resource="http://www.w3.org/ns/prov-o"/>
+        <prov:specializationOf rdf:resource="http://www.w3.org/ns/prov-o"/>
+        <prov:wasDerivedFrom rdf:resource="http://www.w3.org/ns/prov-o-20120312"/>
+        <prov:wasInfluencedBy rdf:resource="http://www.w3.org/ns/prov-o-20120312"/>
+        <prov:wasRevisionOf rdf:resource="http://www.w3.org/ns/prov-o-20120312"/>
+    </Thing>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.0.2.20150417-2043) http://owlapi.sourceforge.net -->
+
