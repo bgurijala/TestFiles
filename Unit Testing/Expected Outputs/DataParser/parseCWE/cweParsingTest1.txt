@@ -1,14 +1,14 @@
-cwePattern[0].weaknessID = 
-cwePattern[0].weaknessName =  
-cwePattern[0].weaknessSummary = 
+cwePattern[0].weaknessID = 85
+cwePattern[0].weaknessName = Doubled Character XSS Manipulations 
+cwePattern[0].weaknessSummary = The web application does not filter user-controlled input for executable script disguised using doubling of the involved
 cwePattern[0].weaknessLikelihood = 
-cwePattern[0].weaknessModSource = 
-cwePattern[0].weaknessModifier = 
-cwePattern[0].weaknessModifierOrg = 
-cwePattern[0].weaknessModDate = 
-cwePattern[0].relatedAttackPatterns = 
-cwePattern[0].weaknessSubmitter = 
-cwePattern[0].weaknessSubSource = 
+cwePattern[0].weaknessModSource = Internal
+cwePattern[0].weaknessModifier = CWE Content Team
+cwePattern[0].weaknessModifierOrg = MITRE
+cwePattern[0].weaknessModDate = 2014-07-30
+cwePattern[0].relatedAttackPatterns = relatedAttackPatterns[0] = 199; relatedAttackPatterns[1] = 244; relatedAttackPatterns[2] = 245; relatedAttackPatterns[3] = 32;
+cwePattern[0].weaknessSubmitter = PLOVER
+cwePattern[0].weaknessSubSource = Externally_Mined
 cwePattern[0].weaknessSubmitterOrg = 
 cwePattern[0].weaknessSubDate = 
 

@@ -14,304 +14,418 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://www.w3.org/ns/prov-o-20130430</Import>
     <Declaration>
-        <NamedIndividual IRI="#LessThan"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Hash"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#NumAmpHashSemiColon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#AlphaNumPercent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Scolon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Weakness"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#exploits"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Pattern"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Ampersand"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Asset"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Creation"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasCharacterValue"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasSeverity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Hsh"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#hasAssetType"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#LT_LessThan"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#GT_AlphaNumAmpHash"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Collabtive"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Pcent"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#LT_AlphaNumAmpHash"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isFormalizedAs"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Alpha"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Retrieval"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SemiColon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Numeric"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#AlphaNumBackSlash"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#CollabtiveInt"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasAllowedAssetCharSet"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#LT_NumAmpHash"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isLabelledWithWeaknessLikelihood"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#AlphaNumAmpHash"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#LT_AlphaNumBackSlash"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasEntityName"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#BackSlash"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LesThan"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Severity"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Amper"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#GT_NumAmpHash"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Percent"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasAssetLength"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Amp"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasActivitySource"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#ProjectName"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#LT_AlphaAmp"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Likelihood"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#GT_AlphaNumAmpHashSemiColon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#GreaterThan"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Characters"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#LT_NumAmpHashSemiColon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#ProjectDesc"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#represents"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#AlphaNumeric"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#AlphaNum"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasModificationTimeStamp"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#AlphaAmpSemiColon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#GT_GreaterThan"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#ProjectID"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasRetrievalTimeStamp"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#GT_AlphaAmp"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasCreationTimeStamp"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#ProjectName_C"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#ProjectID_C"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#GT_AlphaAmpSemiColon"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasEntityID"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#PercentRep"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#LT_AlphaAmpSemiColon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#GT_NumAmpHashSemiColon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BckSlsh"/>
+        <NamedIndividual IRI="#SevCapec245"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasEntityDescription"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isExploitedBy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#NumAmpHash"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Threat"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasAgentName"/>
+        <DataProperty IRI="#hasRetrievalTimeStamp"/>
     </Declaration>
     <Declaration>
         <Class IRI="#AlphaNumAmpHashSemiColon"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ProjectDesc_C"/>
+        <ObjectProperty IRI="#isFormalizedAs"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasMaliciousRepresentations"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#HashRep"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isLabelledWithThreatSeverity"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#SemiCln"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasActivitySummary"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#AlphaAmp"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#GT_AlphaNumPercent"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#GT_AlphaNumBackSlash"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#LT_AlphaNumPercent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Effect"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isLabelledWithThreatLikelihood"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#BackSlsh"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Modification"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasLikelihood"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#LT_AlphaNumAmpHashSemiColon"/>
+        <NamedIndividual IRI="#ProjectID"/>
     </Declaration>
     <Declaration>
         <Class IRI="#GrtThan"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.w3.org/ns/prov#TheMITRECorporation"/>
+        <NamedIndividual IRI="#Hash"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#MyTestPat199"/>
+        <NamedIndividual IRI="#GreaterThan"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#RetCapec199"/>
+        <Class IRI="#AlphaNumPercent"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.w3.org/ns/prov#Internal_CAPEC_Team"/>
+        <NamedIndividual IRI="#GT_NumAmpHashSemiColon"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#SevCapec199"/>
+        <DataProperty IRI="#hasAssetLength"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GT_AlphaNumBackSlash"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LikCapec246"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LesThan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NumAmpHash"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Asset"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#exploits"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Severity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GT_AlphaNumPercent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AlphaNumBackSlash"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LessThan"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEntityID"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SevCapec198"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AlphaNum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GT_NumAmpHash"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MyTestPat245"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GT_AlphaAmp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SemiCln"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LT_AlphaNumBackSlash"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Amper"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProjectName"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLabelledWithThreatSeverity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Percent"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.w3.org/ns/prov#CAPECContentTeam"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#LT_NumAmpHash"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LikCapec245"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LikCapec198"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasModificationTimeStamp"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLikelihood"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LT_NumAmpHashSemiColon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAllowedAssetCharSet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SemiColon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GT_AlphaNumAmpHash"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProjectID_C"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HashRep"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasActivitySummary"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasActivitySource"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GT_AlphaNumAmpHashSemiColon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AlphaNumAmpHash"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scolon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pattern"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isExploitedBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RetCapec247"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Retrieval"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NumAmpHashSemiColon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Likelihood"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SevCapec199"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMaliciousRepresentations"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProjectDesc_C"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Numeric"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GT_GreaterThan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LT_AlphaNumAmpHashSemiColon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProjectName_C"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAgentName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Creation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alpha"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BackSlash"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LT_LessThan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SevCapec247"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GT_AlphaAmpSemiColon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PercentRep"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LT_AlphaAmp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProjectDesc"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RetCapec198"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BackSlsh"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pcent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Characters"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RetCapec246"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LT_AlphaAmpSemiColon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LT_AlphaNumPercent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weakness"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLabelledWithWeaknessLikelihood"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#TheMITRECorporation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MYTESTCAPEC245"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCharacterValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hsh"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MyTestPat246"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ampersand"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MYTESTCAPEC247"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MyTestPat199"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AlphaAmp"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#wasAssociatedWith"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AlphaNumeric"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SevCapec246"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Modification"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSeverity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RetCapec199"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCreationTimeStamp"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEntityName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MYTESTCAPEC198"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLabelledWithThreatLikelihood"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RetCapec245"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#LikCapec199"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#AlphaAmpSemiColon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#Internal_CAPEC_Team"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LT_AlphaNumAmpHash"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Collabtive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Threat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#represents"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MyTestPat247"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LikCapec247"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MYTESTCAPEC246"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MyTestPat198"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Amp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CollabtiveInt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BckSlsh"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Effect"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#MYTESTCAPEC199"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LikCwe83"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LikCwe85"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LikCwe84"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LikCwe87"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LikCwe86"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#MITRE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#Internal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RetCwe86"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RetCwe85"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RetCwe84"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RetCwe83"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RetCwe87"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#CWEContentTeam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MYTESTCWE83"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MYTESTCWE84"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MYTESTCWE85"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MYTESTCWE86"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MYTESTCWE87"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="#AlphaAmp"/>
@@ -659,15 +773,103 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Likelihood"/>
+        <NamedIndividual IRI="#LikCapec198"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Likelihood"/>
         <NamedIndividual IRI="#LikCapec199"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Likelihood"/>
+        <NamedIndividual IRI="#LikCapec245"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Likelihood"/>
+        <NamedIndividual IRI="#LikCapec246"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Likelihood"/>
+        <NamedIndividual IRI="#LikCapec247"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Likelihood"/>
+        <NamedIndividual IRI="#LikCwe83"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Likelihood"/>
+        <NamedIndividual IRI="#LikCwe84"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Likelihood"/>
+        <NamedIndividual IRI="#LikCwe85"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Likelihood"/>
+        <NamedIndividual IRI="#LikCwe86"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Likelihood"/>
+        <NamedIndividual IRI="#LikCwe87"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Threat"/>
+        <NamedIndividual IRI="#MYTESTCAPEC198"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Threat"/>
         <NamedIndividual IRI="#MYTESTCAPEC199"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Threat"/>
+        <NamedIndividual IRI="#MYTESTCAPEC245"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Threat"/>
+        <NamedIndividual IRI="#MYTESTCAPEC246"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Threat"/>
+        <NamedIndividual IRI="#MYTESTCAPEC247"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Weakness"/>
+        <NamedIndividual IRI="#MYTESTCWE83"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Weakness"/>
+        <NamedIndividual IRI="#MYTESTCWE84"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Weakness"/>
+        <NamedIndividual IRI="#MYTESTCWE85"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Weakness"/>
+        <NamedIndividual IRI="#MYTESTCWE86"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Weakness"/>
+        <NamedIndividual IRI="#MYTESTCWE87"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pattern"/>
+        <NamedIndividual IRI="#MyTestPat198"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Pattern"/>
         <NamedIndividual IRI="#MyTestPat199"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pattern"/>
+        <NamedIndividual IRI="#MyTestPat245"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pattern"/>
+        <NamedIndividual IRI="#MyTestPat246"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pattern"/>
+        <NamedIndividual IRI="#MyTestPat247"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Characters"/>
@@ -707,7 +909,43 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Retrieval"/>
+        <NamedIndividual IRI="#RetCapec198"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Retrieval"/>
         <NamedIndividual IRI="#RetCapec199"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Retrieval"/>
+        <NamedIndividual IRI="#RetCapec245"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Retrieval"/>
+        <NamedIndividual IRI="#RetCapec246"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Retrieval"/>
+        <NamedIndividual IRI="#RetCapec247"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Retrieval"/>
+        <NamedIndividual IRI="#RetCwe83"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Retrieval"/>
+        <NamedIndividual IRI="#RetCwe84"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Retrieval"/>
+        <NamedIndividual IRI="#RetCwe85"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Retrieval"/>
+        <NamedIndividual IRI="#RetCwe86"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Retrieval"/>
+        <NamedIndividual IRI="#RetCwe87"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Scolon"/>
@@ -719,7 +957,23 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Severity"/>
+        <NamedIndividual IRI="#SevCapec198"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Severity"/>
         <NamedIndividual IRI="#SevCapec199"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Severity"/>
+        <NamedIndividual IRI="#SevCapec245"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Severity"/>
+        <NamedIndividual IRI="#SevCapec246"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Severity"/>
+        <NamedIndividual IRI="#SevCapec247"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
@@ -727,7 +981,19 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#CWEContentTeam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#Internal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
         <NamedIndividual IRI="http://www.w3.org/ns/prov#Internal_CAPEC_Team"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/prov#Organization"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#MITRE"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.w3.org/ns/prov#Organization"/>
@@ -737,6 +1003,26 @@
         <ObjectProperty IRI="http://www.w3.org/ns/prov#actedOnBehalfOf"/>
         <NamedIndividual IRI="#CollabtiveInt"/>
         <NamedIndividual IRI="#Collabtive"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFormalizedAs"/>
+        <NamedIndividual IRI="#MYTESTCAPEC198"/>
+        <NamedIndividual IRI="#MyTestPat198"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLabelledWithThreatLikelihood"/>
+        <NamedIndividual IRI="#MYTESTCAPEC198"/>
+        <NamedIndividual IRI="#LikCapec198"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLabelledWithThreatSeverity"/>
+        <NamedIndividual IRI="#MYTESTCAPEC198"/>
+        <NamedIndividual IRI="#SevCapec198"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+        <NamedIndividual IRI="#MYTESTCAPEC198"/>
+        <NamedIndividual IRI="#RetCapec198"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isFormalizedAs"/>
@@ -757,6 +1043,141 @@
         <ObjectProperty IRI="http://www.w3.org/ns/prov#wasGeneratedBy"/>
         <NamedIndividual IRI="#MYTESTCAPEC199"/>
         <NamedIndividual IRI="#RetCapec199"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFormalizedAs"/>
+        <NamedIndividual IRI="#MYTESTCAPEC245"/>
+        <NamedIndividual IRI="#MyTestPat245"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLabelledWithThreatLikelihood"/>
+        <NamedIndividual IRI="#MYTESTCAPEC245"/>
+        <NamedIndividual IRI="#LikCapec245"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLabelledWithThreatSeverity"/>
+        <NamedIndividual IRI="#MYTESTCAPEC245"/>
+        <NamedIndividual IRI="#SevCapec245"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+        <NamedIndividual IRI="#MYTESTCAPEC245"/>
+        <NamedIndividual IRI="#RetCapec245"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFormalizedAs"/>
+        <NamedIndividual IRI="#MYTESTCAPEC246"/>
+        <NamedIndividual IRI="#MyTestPat246"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLabelledWithThreatLikelihood"/>
+        <NamedIndividual IRI="#MYTESTCAPEC246"/>
+        <NamedIndividual IRI="#LikCapec246"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLabelledWithThreatSeverity"/>
+        <NamedIndividual IRI="#MYTESTCAPEC246"/>
+        <NamedIndividual IRI="#SevCapec246"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+        <NamedIndividual IRI="#MYTESTCAPEC246"/>
+        <NamedIndividual IRI="#RetCapec246"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFormalizedAs"/>
+        <NamedIndividual IRI="#MYTESTCAPEC247"/>
+        <NamedIndividual IRI="#MyTestPat247"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLabelledWithThreatLikelihood"/>
+        <NamedIndividual IRI="#MYTESTCAPEC247"/>
+        <NamedIndividual IRI="#LikCapec247"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLabelledWithThreatSeverity"/>
+        <NamedIndividual IRI="#MYTESTCAPEC247"/>
+        <NamedIndividual IRI="#SevCapec247"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+        <NamedIndividual IRI="#MYTESTCAPEC247"/>
+        <NamedIndividual IRI="#RetCapec247"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLabelledWithWeaknessLikelihood"/>
+        <NamedIndividual IRI="#MYTESTCWE83"/>
+        <NamedIndividual IRI="#LikCwe83"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+        <NamedIndividual IRI="#MYTESTCWE83"/>
+        <NamedIndividual IRI="#RetCwe83"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLabelledWithWeaknessLikelihood"/>
+        <NamedIndividual IRI="#MYTESTCWE84"/>
+        <NamedIndividual IRI="#LikCwe84"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+        <NamedIndividual IRI="#MYTESTCWE84"/>
+        <NamedIndividual IRI="#RetCwe84"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isExploitedBy"/>
+        <NamedIndividual IRI="#MYTESTCWE85"/>
+        <NamedIndividual IRI="#MYTESTCAPEC199"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isExploitedBy"/>
+        <NamedIndividual IRI="#MYTESTCWE85"/>
+        <NamedIndividual IRI="#MYTESTCAPEC245"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLabelledWithWeaknessLikelihood"/>
+        <NamedIndividual IRI="#MYTESTCWE85"/>
+        <NamedIndividual IRI="#LikCwe85"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+        <NamedIndividual IRI="#MYTESTCWE85"/>
+        <NamedIndividual IRI="#RetCwe85"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isExploitedBy"/>
+        <NamedIndividual IRI="#MYTESTCWE86"/>
+        <NamedIndividual IRI="#MYTESTCAPEC199"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isExploitedBy"/>
+        <NamedIndividual IRI="#MYTESTCWE86"/>
+        <NamedIndividual IRI="#MYTESTCAPEC247"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLabelledWithWeaknessLikelihood"/>
+        <NamedIndividual IRI="#MYTESTCWE86"/>
+        <NamedIndividual IRI="#LikCwe86"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+        <NamedIndividual IRI="#MYTESTCWE86"/>
+        <NamedIndividual IRI="#RetCwe86"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isExploitedBy"/>
+        <NamedIndividual IRI="#MYTESTCWE87"/>
+        <NamedIndividual IRI="#MYTESTCAPEC199"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLabelledWithWeaknessLikelihood"/>
+        <NamedIndividual IRI="#MYTESTCWE87"/>
+        <NamedIndividual IRI="#LikCwe87"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+        <NamedIndividual IRI="#MYTESTCWE87"/>
+        <NamedIndividual IRI="#RetCwe87"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasAllowedAssetCharSet"/>
@@ -835,6 +1256,16 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasActivitySource"/>
+        <NamedIndividual IRI="#RetCapec198"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#Internal_CAPEC_Team"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#RetCapec198"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#CAPECContentTeam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActivitySource"/>
         <NamedIndividual IRI="#RetCapec199"/>
         <NamedIndividual IRI="http://www.w3.org/ns/prov#Internal_CAPEC_Team"/>
     </ObjectPropertyAssertion>
@@ -844,9 +1275,94 @@
         <NamedIndividual IRI="http://www.w3.org/ns/prov#CAPECContentTeam"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActivitySource"/>
+        <NamedIndividual IRI="#RetCapec245"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#Internal_CAPEC_Team"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#RetCapec245"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#CAPECContentTeam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActivitySource"/>
+        <NamedIndividual IRI="#RetCapec246"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#Internal_CAPEC_Team"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#RetCapec246"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#CAPECContentTeam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActivitySource"/>
+        <NamedIndividual IRI="#RetCapec247"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#Internal_CAPEC_Team"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#RetCapec247"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#CAPECContentTeam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActivitySource"/>
+        <NamedIndividual IRI="#RetCwe83"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#Internal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#RetCwe83"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#CWEContentTeam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActivitySource"/>
+        <NamedIndividual IRI="#RetCwe84"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#Internal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#RetCwe84"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#CWEContentTeam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActivitySource"/>
+        <NamedIndividual IRI="#RetCwe85"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#Internal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#RetCwe85"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#CWEContentTeam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActivitySource"/>
+        <NamedIndividual IRI="#RetCwe86"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#Internal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#RetCwe86"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#CWEContentTeam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActivitySource"/>
+        <NamedIndividual IRI="#RetCwe87"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#Internal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wasAssociatedWith"/>
+        <NamedIndividual IRI="#RetCwe87"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#CWEContentTeam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.w3.org/ns/prov#actedOnBehalfOf"/>
         <NamedIndividual IRI="http://www.w3.org/ns/prov#CAPECContentTeam"/>
         <NamedIndividual IRI="http://www.w3.org/ns/prov#TheMITRECorporation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#actedOnBehalfOf"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#CWEContentTeam"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#MITRE"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCharacterValue"/>
@@ -1865,6 +2381,21 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasEntityDescription"/>
+        <NamedIndividual IRI="#MYTESTCAPEC198"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An attacker distributes a link (or possibly some other query structure) with a request to a third party web server that is malformed and also contains a block of exploit code in order to have the exploit become live code in the resulting error page. When the third party web server receives the crafted request and notes the error it then creates an error message that echoes the malformed message, including the exploit. Doing this converts the exploit portion of the message into to valid language elements that are executed by the viewing browser. When a victim executes the query provided by the attacker the infected error message error message is returned including the exploit code which then runs in the victim&apos;s browser. XSS can result in execution of code as well as data leakage (e.g. session cookies can be sent to the attacker). This type of attack is especially dangerous since the exploit appears to come from the third party web server, who the victim may trust and hence be more vulnerable to deception.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityID"/>
+        <NamedIndividual IRI="#MYTESTCAPEC198"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CAPEC198</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityName"/>
+        <NamedIndividual IRI="#MYTESTCAPEC198"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Cross-Site Scripting in Error Pages</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityDescription"/>
         <NamedIndividual IRI="#MYTESTCAPEC199"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The attacker uses alternate forms of keywords or commands that result in the same action as the primary form but which may not be caught by filters. For example, many keywords are processed in a case insensitive manner. If the site&apos;s web filtering algorithm does not convert all tags into a consistent case before the comparison with forbidden keywords it is possible to bypass filters (e.g., incomplete black lists) by using an alternate case structure. For example, the &quot;script&quot; tag using the alternate forms of &quot;Script&quot; or &quot;ScRiPt&quot; may bypass filters where &quot;script&quot; is the only form tested. Other variants using different syntax representations are also possible as well as using pollution meta-characters or entities that are eventually ignored by the rendering engine. The attack can result in the execution of otherwise prohibited functionality.</Literal>
     </DataPropertyAssertion>
@@ -1880,6 +2411,146 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasEntityDescription"/>
+        <NamedIndividual IRI="#MYTESTCAPEC245"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The attacker bypasses input validation by using doubled characters in order to perform a cross-site scripting attack. Some filters fail to recognize dangerous sequences if they are preceded by repeated characters. For example, by doubling the </Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityID"/>
+        <NamedIndividual IRI="#MYTESTCAPEC245"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CAPEC245</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityName"/>
+        <NamedIndividual IRI="#MYTESTCAPEC245"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Cross-Site Scripting Using Doubled Characters, e.g. %3C%3Cscript</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityDescription"/>
+        <NamedIndividual IRI="#MYTESTCAPEC246"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An attacker injects malicious script to global parameters in a Flash movie via a crafted URL. The malicious script is executed in the context of the Flash movie. As such, this is a form of Cross-Site Scripting (XSS), but the abilities granted to the Flash movie make this attack more flexible.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityID"/>
+        <NamedIndividual IRI="#MYTESTCAPEC246"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CAPEC246</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityName"/>
+        <NamedIndividual IRI="#MYTESTCAPEC246"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Cross-Site Scripting Using Flash</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityDescription"/>
+        <NamedIndividual IRI="#MYTESTCAPEC247"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The attacker inserts invalid characters in identifiers to bypass application filtering of input. Filters may not scan beyond invalid characters but during later stages of processing content that follows these invalid characters may still be processed. This allows the attacker to sneak prohibited commands past filters and perform normally prohibited operations. Invalid characters may include null, carriage return, line feed or tab in an identifier. Successful bypassing of the filter can result in a XSS attack, resulting in the disclosure of web cookies or possibly other results.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityID"/>
+        <NamedIndividual IRI="#MYTESTCAPEC247"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CAPEC247</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityName"/>
+        <NamedIndividual IRI="#MYTESTCAPEC247"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Cross-Site Scripting with Masking through Invalid Characters in Identifiers</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityDescription"/>
+        <NamedIndividual IRI="#MYTESTCWE83"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The software does not neutralize or incorrectly neutralizes
+					&quot;javascript:&quot; or other URIs from dangerous attributes within tags, such as</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityID"/>
+        <NamedIndividual IRI="#MYTESTCWE83"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CWE83</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityName"/>
+        <NamedIndividual IRI="#MYTESTCWE83"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Improper Neutralization of Script in Attributes in a Web Page</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityDescription"/>
+        <NamedIndividual IRI="#MYTESTCWE84"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The web application improperly neutralizes user-controlled
+					input for executable script disguised with URI encodings.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityID"/>
+        <NamedIndividual IRI="#MYTESTCWE84"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CWE84</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityName"/>
+        <NamedIndividual IRI="#MYTESTCWE84"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Improper Neutralization of Encoded URI Schemes in a Web Page</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityDescription"/>
+        <NamedIndividual IRI="#MYTESTCWE85"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The web application does not filter user-controlled input for
+					executable script disguised using doubling of the involved</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityID"/>
+        <NamedIndividual IRI="#MYTESTCWE85"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CWE85</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityName"/>
+        <NamedIndividual IRI="#MYTESTCWE85"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Doubled Character XSS Manipulations</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityDescription"/>
+        <NamedIndividual IRI="#MYTESTCWE86"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The software does not neutralize or incorrectly neutralizes
+					invalid characters or byte sequences in the middle of tag names, URI schemes,</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityID"/>
+        <NamedIndividual IRI="#MYTESTCWE86"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CWE86</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityName"/>
+        <NamedIndividual IRI="#MYTESTCWE86"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Improper Neutralization of Invalid Characters in Identifiers in Web Pages</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityDescription"/>
+        <NamedIndividual IRI="#MYTESTCWE87"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The software does not neutralize or incorrectly neutralizes
+					user-controlled input for alternate script syntax.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityID"/>
+        <NamedIndividual IRI="#MYTESTCWE87"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CWE87</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityName"/>
+        <NamedIndividual IRI="#MYTESTCWE87"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Improper Neutralization of Alternate XSS Syntax</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityDescription"/>
+        <NamedIndividual IRI="#MyTestPat198"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">[[LT{1,2}]][[((?i)s){1,1}]][[(SCRIPT){1,1}]]</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityID"/>
+        <NamedIndividual IRI="#MyTestPat198"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Pat198</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityName"/>
+        <NamedIndividual IRI="#MyTestPat198"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Pattern for 198</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityDescription"/>
         <NamedIndividual IRI="#MyTestPat199"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">[[LT{1,2}]][[((?i)s){1,1}]][[(SCRIPT){1,1}]]</Literal>
     </DataPropertyAssertion>
@@ -1892,6 +2563,51 @@
         <DataProperty IRI="#hasEntityName"/>
         <NamedIndividual IRI="#MyTestPat199"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Pattern for 199</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityDescription"/>
+        <NamedIndividual IRI="#MyTestPat245"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">[[LT{1,2}]][[((?i)s){1,1}]][[(SCRIPT){1,1}]]</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityID"/>
+        <NamedIndividual IRI="#MyTestPat245"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Pat245</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityName"/>
+        <NamedIndividual IRI="#MyTestPat245"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Pattern for 245</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityDescription"/>
+        <NamedIndividual IRI="#MyTestPat246"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">[[LT{1,2}]][[((?i)s){1,1}]][[(SCRIPT){1,1}]]</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityID"/>
+        <NamedIndividual IRI="#MyTestPat246"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Pat246</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityName"/>
+        <NamedIndividual IRI="#MyTestPat246"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Pattern for 246</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityDescription"/>
+        <NamedIndividual IRI="#MyTestPat247"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">[[LT{1,2}]][[((?i)s){1,1}]][[(SCRIPT){1,1}]]</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityID"/>
+        <NamedIndividual IRI="#MyTestPat247"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Pat247</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEntityName"/>
+        <NamedIndividual IRI="#MyTestPat247"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Pattern for 247</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCharacterValue"/>
@@ -2045,13 +2761,128 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasModificationTimeStamp"/>
+        <NamedIndividual IRI="#RetCapec198"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2014-06-23</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRetrievalTimeStamp"/>
+        <NamedIndividual IRI="#RetCapec198"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2016-05-25 02:31:52.881</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasModificationTimeStamp"/>
         <NamedIndividual IRI="#RetCapec199"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2014-06-23</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasRetrievalTimeStamp"/>
         <NamedIndividual IRI="#RetCapec199"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2016-05-23 03:40:50.522</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2016-05-25 02:31:52.893</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasModificationTimeStamp"/>
+        <NamedIndividual IRI="#RetCapec245"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2014-06-23</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRetrievalTimeStamp"/>
+        <NamedIndividual IRI="#RetCapec245"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2016-05-25 02:31:52.894</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasModificationTimeStamp"/>
+        <NamedIndividual IRI="#RetCapec246"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2014-06-23</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRetrievalTimeStamp"/>
+        <NamedIndividual IRI="#RetCapec246"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2016-05-25 02:31:52.895</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasModificationTimeStamp"/>
+        <NamedIndividual IRI="#RetCapec247"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2014-06-23</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRetrievalTimeStamp"/>
+        <NamedIndividual IRI="#RetCapec247"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2016-05-25 02:31:52.896</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasModificationTimeStamp"/>
+        <NamedIndividual IRI="#RetCwe83"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2014-07-30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRetrievalTimeStamp"/>
+        <NamedIndividual IRI="#RetCwe83"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2016-05-25 02:31:53.55</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRetrievalTimeStamp"/>
+        <NamedIndividual IRI="#RetCwe83"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2016-05-25 02:31:53.558</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasModificationTimeStamp"/>
+        <NamedIndividual IRI="#RetCwe84"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2014-07-30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRetrievalTimeStamp"/>
+        <NamedIndividual IRI="#RetCwe84"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2016-05-25 02:31:53.562</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRetrievalTimeStamp"/>
+        <NamedIndividual IRI="#RetCwe84"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2016-05-25 02:31:53.567</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasModificationTimeStamp"/>
+        <NamedIndividual IRI="#RetCwe85"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2014-07-30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRetrievalTimeStamp"/>
+        <NamedIndividual IRI="#RetCwe85"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2016-05-25 02:31:53.571</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRetrievalTimeStamp"/>
+        <NamedIndividual IRI="#RetCwe85"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2016-05-25 02:31:53.575</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasModificationTimeStamp"/>
+        <NamedIndividual IRI="#RetCwe86"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2014-07-30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRetrievalTimeStamp"/>
+        <NamedIndividual IRI="#RetCwe86"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2016-05-25 02:31:53.589</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRetrievalTimeStamp"/>
+        <NamedIndividual IRI="#RetCwe86"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2016-05-25 02:31:53.597</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasModificationTimeStamp"/>
+        <NamedIndividual IRI="#RetCwe87"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2014-07-30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRetrievalTimeStamp"/>
+        <NamedIndividual IRI="#RetCwe87"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2016-05-25 02:31:53.592</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRetrievalTimeStamp"/>
+        <NamedIndividual IRI="#RetCwe87"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2016-05-25 02:31:53.6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasMaliciousRepresentations"/>
@@ -2065,8 +2896,23 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasSeverity"/>
+        <NamedIndividual IRI="#SevCapec198"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Medium</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSeverity"/>
         <NamedIndividual IRI="#SevCapec199"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSeverity"/>
+        <NamedIndividual IRI="#SevCapec245"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Medium</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSeverity"/>
+        <NamedIndividual IRI="#SevCapec247"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Medium</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasAgentName"/>
@@ -2075,8 +2921,23 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasAgentName"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#CWEContentTeam"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CWE Content Team</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAgentName"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#Internal"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Internal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAgentName"/>
         <NamedIndividual IRI="http://www.w3.org/ns/prov#Internal_CAPEC_Team"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Internal_CAPEC_Team</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAgentName"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#MITRE"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">MITRE</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasAgentName"/>
